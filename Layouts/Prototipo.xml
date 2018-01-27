@@ -29,6 +29,28 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="Sprite4" uid="24">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3085</x>
+                        <y>371</y>
+                        <z>0</z>
+                        <width>5526</width>
+                        <height>509</height>
+                        <depth>0</depth>
+                        <hotspotX>0.558812857</hotspotX>
+                        <hotspotY>0.728880167</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="Golondrina" uid="0">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -236,7 +258,7 @@
                 </instance>
                 <instance type="Suelo" uid="9">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -244,10 +266,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2502</x>
+                        <x>2503</x>
                         <y>478</y>
                         <z>0</z>
-                        <width>5006</width>
+                        <width>5008</width>
                         <height>20</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -266,10 +288,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>5285</x>
+                        <x>5283</x>
                         <y>480</y>
                         <z>0</z>
-                        <width>431</width>
+                        <width>435</width>
                         <height>-24</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>

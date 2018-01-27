@@ -290,6 +290,25 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite4" sid="797457323947863">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="767885617339567" speed="5">
+                    <frame duration="1" hotspotX="0.558813" hotspotY="0.72888" original-source="C:\Users\Nicole\Desktop\Escenario_gameplay.png">
+                        <collision-poly>
+                            <point x="0.0414405" y="0.00392927" />
+                            <point x="0.558813" y="0.00785855" />
+                            <point x="0.999819" y="0.834971" />
+                            <point x="0.996381" y="0.726916" />
+                            <point x="0.996381" y="0.583497" />
+                            <point x="0.558813" y="0.980354" />
+                            <point x="0.0866811" y="0.960707" />
+                            <point x="0.000723851" y="0.726916" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
