@@ -4,7 +4,7 @@
     <name>EVProt</name>
     <events>
         <variable constant="0" name="Mensaje" sid="667110846235539" static="0" type="number">0</variable>
-	<variable constant="0" name="torreta_shoot" sid="945505525806178" static="0" type="number">1</variable>
+        <variable constant="0" name="torreta_shoot" sid="945505525806178" static="0" type="number">1</variable>
         <event-block sid="563513298672996">
             <conditions>
                 <condition id="1" name="On any click" sid="561054162029184" type="Mouse" />
@@ -108,7 +108,7 @@
                 </action>
             </actions>
         </event-block>
-	<event-block sid="728878689384668">
+        <event-block sid="728878689384668">
             <conditions>
                 <condition id="-18" name="On created" sid="288144343471441" type="torreta" />
             </conditions>

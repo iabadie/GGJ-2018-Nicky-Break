@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Golondrina" uid="0">
+                <instance type="Golondrina" uid="3">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -83,7 +83,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Bazuka" uid="1">
+                <instance type="Bazuka" uid="4">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -105,7 +105,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Proyectil" uid="2">
+                <instance type="Proyectil" uid="14">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -139,7 +139,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Nada" uid="5">
+                <instance type="Nada" uid="15">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -161,7 +161,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Receptáculo" uid="6">
+                <instance type="Receptáculo" uid="16">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -183,7 +183,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Mensaje" uid="7">
+                <instance type="Mensaje" uid="17">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -191,6 +191,19 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
+                        <behavior-instance type="Turret">
+                            <properties>
+                                <range>300</range>
+                                <rate-of-fire>1</rate-of-fire>
+                                <rotate>Yes</rotate>
+                                <rotate-speed>180</rotate-speed>
+                                <target-mode>First in range</target-mode>
+                                <predictive-aim>No</predictive-aim>
+                                <projectile-speed>500</projectile-speed>
+                                <initial-state>Enabled</initial-state>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
                         <behavior-instance type="Platform">
                             <properties>
                                 <max-speed>330</max-speed>
@@ -221,7 +234,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Suelo" uid="9">
+                <instance type="Suelo" uid="18">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -243,7 +256,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Suelo2" uid="11">
+                <instance type="Suelo2" uid="19">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -265,7 +278,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Ganaste" uid="8">
+                <instance type="Ganaste" uid="20">
                     <properties>
                         <text>Ganaste</text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -311,7 +324,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Perdiste" uid="10">
+                <instance type="Perdiste" uid="21">
                     <properties>
                         <text>Perdiste</text>
                         <initial-visibility>Invisible</initial-visibility>

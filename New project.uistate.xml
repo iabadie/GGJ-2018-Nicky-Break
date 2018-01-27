@@ -10,12 +10,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Prototipo</layout>
-        <event-sheet active="1" order="1">EVProt</event-sheet>
+        <layout order="0">Menu</layout>
+        <layout order="1">config</layout>
+        <layout order="2">creditos</layout>
+        <layout active="1" order="7">Prototipo</layout>
+        <event-sheet order="3">menu</event-sheet>
+        <event-sheet order="4">config</event-sheet>
+        <event-sheet order="5">creditos</event-sheet>
+        <event-sheet order="6">EVProt</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
-        <property expanded="0" name="Project settings" />
+        <property expanded="1" name="Project settings" />
         <property expanded="0" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
@@ -31,12 +37,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Golondrina/" />
         <folder expanded="1" path="animation-folder/Bazuka/" />
         <folder expanded="1" path="animation-folder/Proyectil/" />
+        <folder expanded="1" path="animation-folder/torreta/" />
         <folder expanded="1" path="animation-folder/Nada/" />
         <folder expanded="1" path="animation-folder/Receptáculo/" />
         <folder expanded="1" path="animation-folder/Mensaje/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/Suelo/" />
         <folder expanded="1" path="animation-folder/Suelo2/" />
-	<folder expanded="1" path="animation-folder/torreta/" />
     </folders-expanded>
 </c2uistate>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>menu</name>
+    <events>
+        <event-block sid="409007079024772">
+            <conditions>
+                <condition id="0" name="On clicked" sid="685579984642469" type="comenzar" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="786090092843480" type="System">
+                    <param id="0" name="Layout">Prototipo</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="935415071702055">
+            <conditions>
+                <condition id="0" name="On clicked" sid="672077296901904" type="Config" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="444664438183959" type="System">
+                    <param id="0" name="Layout">config</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="149990421694336">
+            <conditions>
+                <condition id="0" name="On clicked" sid="696115511985377" type="creditos" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="449095964860277" type="System">
+                    <param id="0" name="Layout">creditos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="229881414330646">
+            <conditions>
+                <condition id="0" name="On clicked" sid="317143784282508" type="Button" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="469526428516727" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
