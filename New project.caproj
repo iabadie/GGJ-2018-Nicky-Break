@@ -21,6 +21,9 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
     <used-effects />
     <configurations>
@@ -56,10 +59,18 @@
                 <behavior-type name="8Direction" sid="419410335500341">
                     <behavior id="EightDir" />
                 </behavior-type>
+                <behavior-type name="ScrollTo" sid="697680295549745">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="861306801371593">
+                    <behavior id="Platform" />
+                </behavior-type>
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="800347518513173" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <image-point name="IP1" x="0.504" y="0.912" />
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -114,23 +125,107 @@
         <object-type name="Button" sid="665430552628237">
             <plugin id="Button" />
         </object-type>
+        <object-type name="torreta" sid="857147243206949">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Turret" sid="467678335200120">
+                    <behavior id="Turret" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="135653592297018" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Nada" sid="989955004123899">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="521045720580075" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Receptáculo" sid="429971069817378">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="269469086044381" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mensaje" sid="296923495853139">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Turret" sid="467678335200120">
+                    <behavior id="Turret" />
+                </behavior-type>
+                <behavior-type name="Platform" sid="694792864137715">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="231513053883410" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="598959707076564">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="711400814344320" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Ganaste" sid="767044208038067">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Suelo" sid="570764129381946">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="135653592297018" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="249090272736145" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Perdiste" sid="198313371868014">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Suelo2" sid="355399143853871">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="432818882838372" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextBox2" sid="319820879624582">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Text3" sid="387492655747034">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>Layout 1.xml</layout>
         <layout>Menu.xml</layout>
         <layout>config.xml</layout>
         <layout>creditos.xml</layout>
+        <layout>Prototipo.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>EVProt.xml</event-sheet>
         <event-sheet>menu.xml</event-sheet>
         <event-sheet>config.xml</event-sheet>
         <event-sheet>creditos.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Keyboard" uid="3" />
-        <global-instance type="Mouse" uid="4" />
+        <global-instance type="Keyboard" uid="22" />
+        <global-instance type="Mouse" uid="23" />
     </global-instances>
     <sounds-folder />
     <music-folder />
