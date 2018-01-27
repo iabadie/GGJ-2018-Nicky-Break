@@ -147,5 +147,36 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="993921161352735">
+            <conditions>
+                <condition id="-18" name="On created" sid="950369840869856" type="Nube" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="961657222179519">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="770202038276585" type="System">
+                    <param id="0" name="Interval (seconds)">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="337370659211490" type="GeneradorNube">
+                    <param id="0" name="Object">Nube</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">choose(1,2)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="247651453058776">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="128022986190002" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="932602917012086" type="GeneradorNube">
+                    <param id="0" name="X">scrollx + 440</param>
+                    <param id="1" name="Y">scrolly</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
