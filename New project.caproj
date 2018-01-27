@@ -18,6 +18,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+	<behavior author="Scirra" id="Turret" version="1">Turret</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
@@ -96,6 +97,19 @@
         <object-type name="Mouse" sid="633603007188004">
             <plugin id="Mouse" />
         </object-type>
+  	<object-type name="torreta" sid="857147243206949">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Turret" sid="467678335200120">
+                    <behavior id="Turret" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="135653592297018" speed="5">
+                   <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
         <object-type name="Nada" sid="989955004123899">
             <plugin id="Sprite" />
             <animation-folder>
@@ -115,6 +129,9 @@
         <object-type name="Mensaje" sid="296923495853139">
             <plugin id="Sprite" />
             <behaviors>
+ 		<behavior-type name="Turret" sid="467678335200120">
+  		    <behavior id="Turret" />
+		</behavior-type>
                 <behavior-type name="Platform" sid="694792864137715">
                     <behavior id="Platform" />
                 </behavior-type>
@@ -139,6 +156,9 @@
         <object-type name="Suelo" sid="570764129381946">
             <plugin id="Sprite" />
             <animation-folder>
+		<animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="135653592297018" speed="5">
+  			<frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="249090272736145" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
