@@ -10,12 +10,18 @@
     <unique-id>3etiopgvnqmot</unique-id>
     <saved-with-version>25200</saved-with-version>
     <used-plugins>
+<<<<<<< HEAD
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+=======
+>>>>>>> master
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+<<<<<<< HEAD
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
+=======
+>>>>>>> master
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -155,6 +161,9 @@
         <object-type name="Mouse" sid="633603007188004">
             <plugin id="Mouse" />
         </object-type>
+<<<<<<< HEAD
+=======
+>>>>>>> master
         <object-type name="torreta" sid="857147243206949">
             <plugin id="Sprite" />
             <behaviors>
@@ -233,6 +242,7 @@
                 </animation>
             </animation-folder>
         </object-type>
+<<<<<<< HEAD
         <object-type name="Audio" sid="459143743363243">
             <plugin id="Audio" />
         </object-type>
@@ -299,6 +309,7 @@
         <event-sheet>EVProt.xml</event-sheet>
     </event-folder>
     <global-instances>
+<<<<<<< HEAD
         <global-instance type="Keyboard" uid="3" />
         <global-instance type="Mouse" uid="4" />
         <global-instance type="Audio" uid="13">
@@ -320,6 +331,8 @@
                 <analog-deadzone>25</analog-deadzone>
             </properties>
         </global-instance>
+=======
+>>>>>>> master
     </global-instances>
     <sounds-folder />
     <music-folder>
