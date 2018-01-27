@@ -10,19 +10,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-<<<<<<< HEAD
-        <layout active="1" order="0">Prototipo</layout>
-        <event-sheet order="1">EVProt</event-sheet>
-=======
-        <layout order="0">Menu</layout>
-        <layout order="1">config</layout>
-        <layout order="2">creditos</layout>
-        <layout active="1" order="7">Prototipo</layout>
-        <event-sheet order="3">menu</event-sheet>
-        <event-sheet order="4">config</event-sheet>
-        <event-sheet order="5">creditos</event-sheet>
-        <event-sheet order="6">EVProt</event-sheet>
->>>>>>> master
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -49,14 +36,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/Suelo/" />
         <folder expanded="1" path="animation-folder/Suelo2/" />
-<<<<<<< HEAD
         <folder expanded="1" path="animation-folder/Explosión/" />
         <folder expanded="1" path="animation-folder/NubeTóxica/" />
         <folder expanded="1" path="animation-folder/NubeTóxica2/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
         <folder expanded="1" path="animation-folder/StopScroll/" />
-=======
->>>>>>> master
     </folders-expanded>
 </c2uistate>
