@@ -10,9 +10,13 @@
     <unique-id>3etiopgvnqmot</unique-id>
     <saved-with-version>25200</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="sliderbar" version="1">Slider bar</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -28,6 +32,7 @@
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">Yes</prop>
@@ -85,13 +90,43 @@
         <object-type name="Mouse" sid="633603007188004">
             <plugin id="Mouse" />
         </object-type>
+        <object-type name="comenzar" sid="668630046609044">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Config" sid="327538283489835">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="creditos" sid="662830857294501">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="SliderBar" sid="917877020779201">
+            <plugin id="sliderbar" />
+        </object-type>
+        <object-type name="TextBox" sid="971915965044708">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Text" sid="140157195159753">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="111659344297133">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Button" sid="665430552628237">
+            <plugin id="Button" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Layout 1.xml</layout>
+        <layout>Menu.xml</layout>
+        <layout>config.xml</layout>
+        <layout>creditos.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>menu.xml</event-sheet>
+        <event-sheet>config.xml</event-sheet>
+        <event-sheet>creditos.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="3" />
