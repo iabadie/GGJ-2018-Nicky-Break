@@ -299,7 +299,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="721252634724210" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502857" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -307,7 +307,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="842391663518635" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506849" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -333,7 +333,7 @@
                             <point x="0.558813" y="0.980354" />
                             <point x="0.0866811" y="0.960707" />
                             <point x="0.000723851" y="0.726916" />
-							</collision-poly>
+                        </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
@@ -395,7 +395,7 @@
                             <point x="0.5" y="0.805369" />
                             <point x="0.134021" y="0.825503" />
                             <point x="0.0721649" y="0.496644" />
-							</collision-poly>
+                        </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
@@ -449,12 +449,12 @@
                             <point x="0.965517" y="0.125" />
                             <point x="0.955665" y="0.839286" />
                             <point x="0.044335" y="0.839286" />
-							</collision-poly>
+                        </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
-		<object-type name="Text4" sid="677608896015875">
+        <object-type name="Text4" sid="677608896015875">
             <plugin id="Text" />
         </object-type>
         <object-type name="Text5" sid="370723913523699">
@@ -472,7 +472,7 @@
                         <image-point name="2" x="0.5" y="0.416667" />
                         <image-point name="3" x="0.5" y="0.879167" />
                     </frame>
-					</animation>
+                </animation>
             </animation-folder>
         </object-type>
     </object-folder>
@@ -488,10 +488,11 @@
         <event-sheet>menu.xml</event-sheet>
         <event-sheet>config.xml</event-sheet>
         <event-sheet>creditos.xml</event-sheet>
+        <event-sheet>control setup.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="32" />
-        <global-instance type="Audio" uid="33">
+        <global-instance type="Mouse" uid="37" />
+        <global-instance type="Audio" uid="38">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -505,12 +506,12 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="Gamepad" uid="34">
+        <global-instance type="Gamepad" uid="39">
             <properties>
                 <analog-deadzone>25</analog-deadzone>
             </properties>
         </global-instance>
-        <global-instance type="Keyboard" uid="35" />
+        <global-instance type="Keyboard" uid="40" />
     </global-instances>
     <sounds-folder />
     <music-folder>

@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EVProt</name>
     <events>
+        <include>control setup</include>
         <variable constant="0" name="Mensaje" sid="667110846235539" static="0" type="number">0</variable>
         <variable constant="0" name="torreta_shoot" sid="945505525806178" static="0" type="number">1</variable>
         <event-block sid="563513298672996">
@@ -50,7 +51,7 @@
                 <action behavior="Platform" id="12" name="Fall through" sid="234850915373391" type="Golondrina" />
             </actions>
         </event-block>
-        <event-block sid="200366919384593">
+        <event-block any="1" sid="200366919384593">
             <conditions>
                 <condition id="2" name="Key is down" sid="804897986747012" type="Keyboard">
                     <param id="0" name="Key">65</param>
@@ -63,7 +64,7 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="603751330821372">
+        <event-block any="1" sid="603751330821372">
             <conditions>
                 <condition id="2" name="Key is down" sid="259916678593908" type="Keyboard">
                     <param id="0" name="Key">68</param>
