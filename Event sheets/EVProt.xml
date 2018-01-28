@@ -195,14 +195,14 @@
         <event-block sid="961657222179519">
             <conditions>
                 <condition id="-6" name="Every X seconds" sid="770202038276585" type="System">
-                    <param id="0" name="Interval (seconds)">5</param>
+                    <param id="0" name="Interval (seconds)">12</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="0" name="Spawn another object" sid="337370659211490" type="GeneradorNube">
                     <param id="0" name="Object">Nube</param>
                     <param id="1" name="Layer">0</param>
-                    <param id="2" name="Image point">choose(1,2)</param>
+                    <param id="2" name="Image point">choose(&quot;1&quot;,&quot;2&quot;)</param>
                 </action>
             </actions>
         </event-block>
@@ -212,9 +212,9 @@
             </conditions>
             <actions>
                 <action id="-3" name="Set position" sid="932602917012086" type="GeneradorNube">
-                    <param id="0" name="X">scrollx + 440</param>
-                    <param id="1" name="Y">scrolly</param>
-					</action>
+                    <param id="0" name="X">scrollx + 460</param>
+                    <param id="1" name="Y">scrolly - 200</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="445804120837538">
@@ -237,7 +237,7 @@
             <actions>
                 <action behavior="ScrollTo" id="1" name="Set enabled" sid="917094879411665" type="Golondrina">
                     <param id="0" name="State">0</param>
-					</action>
+                </action>
             </actions>
         </event-block>
     </events>

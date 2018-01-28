@@ -356,10 +356,10 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="978011511128502" speed="5">
-                    <frame duration="1" hotspotX="0.492" hotspotY="0.52">
-                        <image-point name="1" x="0.5" y="0.12" />
-                        <image-point name="2" x="0.5" y="0.416" />
-                        <image-point name="3" x="0.496" y="0.78" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.520833">
+                        <image-point name="1" x="0.5" y="0.120833" />
+                        <image-point name="2" x="0.5" y="0.416667" />
+                        <image-point name="3" x="0.5" y="0.879167" />
                     </frame>
                 </animation>
             </animation-folder>
@@ -379,8 +379,8 @@
         <event-sheet>creditos.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="30" />
-        <global-instance type="Audio" uid="31">
+        <global-instance type="Mouse" uid="32" />
+        <global-instance type="Audio" uid="33">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -394,12 +394,12 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="Gamepad" uid="32">
+        <global-instance type="Gamepad" uid="34">
             <properties>
                 <analog-deadzone>25</analog-deadzone>
             </properties>
         </global-instance>
-        <global-instance type="Keyboard" uid="33" />
+        <global-instance type="Keyboard" uid="35" />
     </global-instances>
     <sounds-folder />
     <music-folder>
