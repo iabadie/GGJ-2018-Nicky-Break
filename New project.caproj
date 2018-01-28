@@ -299,7 +299,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="721252634724210" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50303" original-source="E:\usuarios\alumno\Escritorio\LzUjDSYfgWoN0zJYwDueLA_r.jpg" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -307,7 +307,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="842391663518635" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506849" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -333,7 +333,7 @@
                             <point x="0.558813" y="0.980354" />
                             <point x="0.0866811" y="0.960707" />
                             <point x="0.000723851" y="0.726916" />
-							</collision-poly>
+                        </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
@@ -395,7 +395,7 @@
                             <point x="0.5" y="0.805369" />
                             <point x="0.134021" y="0.825503" />
                             <point x="0.0721649" y="0.496644" />
-							</collision-poly>
+                        </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
@@ -449,12 +449,12 @@
                             <point x="0.965517" y="0.125" />
                             <point x="0.955665" y="0.839286" />
                             <point x="0.044335" y="0.839286" />
-							</collision-poly>
+                        </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
-		<object-type name="Text4" sid="677608896015875">
+        <object-type name="Text4" sid="677608896015875">
             <plugin id="Text" />
         </object-type>
         <object-type name="Text5" sid="370723913523699">
@@ -472,7 +472,168 @@
                         <image-point name="2" x="0.5" y="0.416667" />
                         <image-point name="3" x="0.5" y="0.879167" />
                     </frame>
-					</animation>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="490191816012418">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="234581007349649" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\usuarios\alumno\Escritorio\PhotoFunia-1517151324.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="comienzo" sid="180815740961802">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="446941232593813" speed="5">
+                    <frame duration="1" hotspotX="0.502415" hotspotY="0.5" original-source="E:\usuarios\alumno\Escritorio\Nueva carpeta (2)\boton 2 normal.png">
+                        <collision-poly>
+                            <point x="0.0386473" y="0.133333" />
+                            <point x="0.497585" y="0.1" />
+                            <point x="0.951691" y="0.166667" />
+                            <point x="0.951691" y="0.833333" />
+                            <point x="0.497585" y="0.916667" />
+                            <point x="0.0338164" y="0.883333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="E:\usuarios\alumno\Escritorio\Nueva carpeta (2)\boton 2 pressed.png">
+                        <collision-poly>
+                            <point x="0.0151515" y="0.0526316" />
+                            <point x="0.5" y="0.0526316" />
+                            <point x="0.954545" y="0.157895" />
+                            <point x="0.949495" y="0.824561" />
+                            <point x="0.0454545" y="0.842105" />
+                            <point x="0" y="0.491228" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Credito2" sid="680306794545920">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="309504782709620" speed="5">
+                    <frame duration="1" hotspotX="0.502538" hotspotY="0.507937" original-source="E:\usuarios\alumno\Escritorio\Nueva carpeta (2)\boton 3 normal.png">
+                        <collision-poly>
+                            <point x="0.0203046" y="0.0634921" />
+                            <point x="0.497462" y="0.0634921" />
+                            <point x="0.969543" y="0.0952381" />
+                            <point x="0.969543" y="0.492063" />
+                            <point x="0.949239" y="0.84127" />
+                            <point x="0.0507614" y="0.84127" />
+                            <point x="0.00507614" y="0.492063" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.502463" hotspotY="0.5" original-source="E:\usuarios\alumno\Escritorio\Nueva carpeta (2)\boton 3 pressed.png">
+                        <collision-poly>
+                            <point x="0.0295567" y="0.107143" />
+                            <point x="0.497537" y="0.0357143" />
+                            <point x="0.965517" y="0.125" />
+                            <point x="0.955665" y="0.839286" />
+                            <point x="0.044335" y="0.839286" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="credito" sid="385732002964570">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="421463942031190" speed="5">
+                    <frame duration="1" hotspotX="0.502415" hotspotY="0.5" original-source="E:\usuarios\alumno\Escritorio\Nueva carpeta (2)\boton 2 normal.png">
+                        <collision-poly>
+                            <point x="0.0386473" y="0.133333" />
+                            <point x="0.497585" y="0.1" />
+                            <point x="0.951691" y="0.166667" />
+                            <point x="0.951691" y="0.833333" />
+                            <point x="0.497585" y="0.916667" />
+                            <point x="0.0338164" y="0.883333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="E:\usuarios\alumno\Escritorio\Nueva carpeta (2)\boton 2 pressed.png">
+                        <collision-poly>
+                            <point x="0.0151515" y="0.0526316" />
+                            <point x="0.5" y="0.0526316" />
+                            <point x="0.954545" y="0.157895" />
+                            <point x="0.949495" y="0.824561" />
+                            <point x="0.0454545" y="0.842105" />
+                            <point x="0" y="0.491228" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="827264059471296">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="518597906105028" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502825" original-source="E:\usuarios\alumno\Escritorio\WhatsApp Image 2018-01-28 at 12.png">
+                        <collision-poly>
+                            <point x="0.034375" y="0.248588" />
+                            <point x="0.5" y="0.988701" />
+                            <point x="0.939844" y="0.435028" />
+                            <point x="0.964063" y="0.497175" />
+                            <point x="0.967188" y="0.762712" />
+                            <point x="0.5" y="0.99435" />
+                            <point x="0.034375" y="0.751412" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="credito3" sid="756680897632866">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="499963835838433" speed="5">
+                    <frame duration="1" hotspotX="0.502415" hotspotY="0.5" original-source="E:\usuarios\alumno\Escritorio\Nueva carpeta (2)\boton 2 normal.png">
+                        <collision-poly>
+                            <point x="0.0386473" y="0.133333" />
+                            <point x="0.497585" y="0.1" />
+                            <point x="0.951691" y="0.166667" />
+                            <point x="0.951691" y="0.833333" />
+                            <point x="0.497585" y="0.916667" />
+                            <point x="0.0338164" y="0.883333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="E:\usuarios\alumno\Escritorio\Nueva carpeta (2)\boton 2 pressed.png">
+                        <collision-poly>
+                            <point x="0.0151515" y="0.0526316" />
+                            <point x="0.5" y="0.0526316" />
+                            <point x="0.954545" y="0.157895" />
+                            <point x="0.949495" y="0.824561" />
+                            <point x="0.0454545" y="0.842105" />
+                            <point x="0" y="0.491228" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="credito4" sid="437520500030939">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="137350182477277" speed="5">
+                    <frame duration="1" hotspotX="0.502415" hotspotY="0.5" original-source="E:\usuarios\alumno\Escritorio\Nueva carpeta (2)\boton 2 normal.png">
+                        <collision-poly>
+                            <point x="0.0386473" y="0.133333" />
+                            <point x="0.497585" y="0.1" />
+                            <point x="0.951691" y="0.166667" />
+                            <point x="0.951691" y="0.833333" />
+                            <point x="0.497585" y="0.916667" />
+                            <point x="0.0338164" y="0.883333" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="E:\usuarios\alumno\Escritorio\Nueva carpeta (2)\boton 2 pressed.png">
+                        <collision-poly>
+                            <point x="0.0151515" y="0.0526316" />
+                            <point x="0.5" y="0.0526316" />
+                            <point x="0.954545" y="0.157895" />
+                            <point x="0.949495" y="0.824561" />
+                            <point x="0.0454545" y="0.842105" />
+                            <point x="0" y="0.491228" />
+                        </collision-poly>
+                    </frame>
+                </animation>
             </animation-folder>
         </object-type>
     </object-folder>
@@ -490,8 +651,8 @@
         <event-sheet>creditos.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="32" />
-        <global-instance type="Audio" uid="33">
+        <global-instance type="Mouse" uid="37" />
+        <global-instance type="Audio" uid="38">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -505,12 +666,12 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="Gamepad" uid="34">
+        <global-instance type="Gamepad" uid="39">
             <properties>
                 <analog-deadzone>25</analog-deadzone>
             </properties>
         </global-instance>
-        <global-instance type="Keyboard" uid="35" />
+        <global-instance type="Keyboard" uid="40" />
     </global-instances>
     <sounds-folder />
     <music-folder>

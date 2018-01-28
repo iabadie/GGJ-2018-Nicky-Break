@@ -48,9 +48,9 @@
                 <condition id="-2" name="On start of layout" sid="905880818447680" type="System" />
             </conditions>
             <actions>
-                <action id="2" name="Stop" sid="281817111312990" type="comienzo1" />
+                <action id="2" name="Stop" sid="281817111312990" type="comienzo" />
                 <action id="2" name="Stop" sid="122233433802783" type="config1" />
-                <action id="2" name="Stop" sid="789893583023659" type="Credito1" />
+                <action id="2" name="Stop" sid="789893583023659" type="credito" />
             </actions>
         </event-block>
         <event-block sid="512600642063728">
@@ -58,11 +58,11 @@
                 <condition id="6" name="On object clicked" sid="297236339608445" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">comienzo1</param>
+                    <param id="2" name="Object clicked">comienzo</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="5" name="Set frame" sid="909516851212773" type="comienzo1">
+                <action id="5" name="Set frame" sid="909516851212773" type="comienzo">
                     <param id="0" name="Frame number">1</param>
                 </action>
                 <action id="-16" name="Wait" sid="109814898832952" type="System">
@@ -98,11 +98,11 @@
                 <condition id="6" name="On object clicked" sid="159870018397838" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Credito1</param>
+                    <param id="2" name="Object clicked">credito</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="5" name="Set frame" sid="471774761307004" type="Credito1">
+                <action id="5" name="Set frame" sid="471774761307004" type="credito">
                     <param id="0" name="Frame number">1</param>
                 </action>
                 <action id="-16" name="Wait" sid="217127121216361" type="System">
