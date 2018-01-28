@@ -473,7 +473,7 @@
                         <image-point name="3" x="0.5" y="0.879167" />
                     </frame>
                 </animation>
-            </animation-folder>
+			</animation-folder>
         </object-type>
         <object-type name="Sprite5" sid="490191816012418">
             <plugin id="Sprite" />
@@ -649,6 +649,7 @@
         <event-sheet>menu.xml</event-sheet>
         <event-sheet>config.xml</event-sheet>
         <event-sheet>creditos.xml</event-sheet>
+        <event-sheet>control setup.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="37" />
