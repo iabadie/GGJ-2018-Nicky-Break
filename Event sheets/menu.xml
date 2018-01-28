@@ -3,119 +3,120 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>menu</name>
     <events>
-        <event-block sid="409007079024772">
-            <conditions>
-                <condition id="0" name="On clicked" sid="685579984642469" type="comenzar" />
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="786090092843480" type="System">
-                    <param id="0" name="Layout">Prototipo</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="935415071702055">
-            <conditions>
-                <condition id="0" name="On clicked" sid="672077296901904" type="Config" />
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="444664438183959" type="System">
-                    <param id="0" name="Layout">config</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="149990421694336">
-            <conditions>
-                <condition id="0" name="On clicked" sid="696115511985377" type="creditos" />
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="449095964860277" type="System">
-                    <param id="0" name="Layout">creditos</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="229881414330646">
-            <conditions>
-                <condition id="0" name="On clicked" sid="317143784282508" type="Button" />
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="469526428516727" type="System">
-                    <param id="0" name="Layout">Menu</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="351236295159462">
-            <conditions>
-                <condition id="-2" name="On start of layout" sid="905880818447680" type="System" />
-            </conditions>
-            <actions>
-                <action id="2" name="Stop" sid="281817111312990" type="comienzo1" />
-                <action id="2" name="Stop" sid="122233433802783" type="config1" />
-                <action id="2" name="Stop" sid="789893583023659" type="Credito1" />
-            </actions>
-        </event-block>
-        <event-block sid="512600642063728">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="297236339608445" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">comienzo1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="909516851212773" type="comienzo1">
-                    <param id="0" name="Frame number">1</param>
-                </action>
-                <action id="-16" name="Wait" sid="109814898832952" type="System">
-                    <param id="0" name="Seconds">2.0</param>
-                </action>
-                <action id="-2" name="Go to layout" sid="491360823213780" type="System">
-                    <param id="0" name="Layout">Prototipo</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="553464945631846">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="193131144315563" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">config1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="776814131906297" type="config1">
-                    <param id="0" name="Frame number">1</param>
-                </action>
-                <action id="-16" name="Wait" sid="613761902025210" type="System">
-                    <param id="0" name="Seconds">2.0</param>
-                </action>
-                <action id="-2" name="Go to layout" sid="360033025119805" type="System">
-                    <param id="0" name="Layout">config</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="195953833764535">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="159870018397838" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Credito1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="5" name="Set frame" sid="471774761307004" type="Credito1">
-                    <param id="0" name="Frame number">1</param>
-                </action>
-                <action id="-16" name="Wait" sid="217127121216361" type="System">
-                    <param id="0" name="Seconds">2.0</param>
-                </action>
-                <action id="-2" name="Go to layout" sid="831799605694619" type="System">
-                    <param id="0" name="Layout">creditos</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="564017562114976">
-            <conditions />
-            <actions />
-        </event-block>
+        <event-group description="" sid="695042679319904" title="Group3">
+            <sub-events>
+                <event-block sid="409007079024772">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="685579984642469" type="comenzar" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="786090092843480" type="System">
+                            <param id="0" name="Layout">Nivel1</param>
+                        </action>
+                        <action id="-21" name="Reset global variables" sid="902542334111472" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="935415071702055">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="672077296901904" type="Config" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="444664438183959" type="System">
+                            <param id="0" name="Layout">config</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="149990421694336">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="696115511985377" type="creditos" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="449095964860277" type="System">
+                            <param id="0" name="Layout">creditos</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="229881414330646">
+                    <conditions>
+                        <condition id="0" name="On clicked" sid="317143784282508" type="ButtonvOLVER" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="469526428516727" type="System">
+                            <param id="0" name="Layout">Menu</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="351236295159462">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="905880818447680" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="281817111312990" type="comienzo1" />
+                        <action id="2" name="Stop" sid="122233433802783" type="config1" />
+                        <action id="2" name="Stop" sid="789893583023659" type="Credito1" />
+                    </actions>
+                </event-block>
+                <event-block sid="512600642063728">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="297236339608445" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">comienzo1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="909516851212773" type="comienzo1">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="109814898832952" type="System">
+                            <param id="0" name="Seconds">2.0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="491360823213780" type="System">
+                            <param id="0" name="Layout">Nivel1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="553464945631846">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="193131144315563" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">config1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="776814131906297" type="config1">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="613761902025210" type="System">
+                            <param id="0" name="Seconds">2.0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="360033025119805" type="System">
+                            <param id="0" name="Layout">config</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="195953833764535">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="159870018397838" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Credito1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="471774761307004" type="Credito1">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="217127121216361" type="System">
+                            <param id="0" name="Seconds">2.0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="831799605694619" type="System">
+                            <param id="0" name="Layout">creditos</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EvPersonajes</name>
+    <events>
+        <event-group description="" sid="438712466308680" title="Group2">
+            <sub-events>
+                <event-block sid="684379567313841">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="622589070686178" type="Keyboard">
+                            <param id="0" name="Key">37</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="136264439255774" type="Bazuka">
+                            <param id="0" name="Angle">180</param>
+                            <param id="1" name="Distance">5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="549922881990244" type="Bazuka">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="352918980204587">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="662654459286387" type="Keyboard">
+                            <param id="0" name="Key">39</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="833848092214914" type="Bazuka">
+                            <param id="0" name="Angle">360</param>
+                            <param id="1" name="Distance">5</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="321621055886759" type="Bazuka">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="810674200823355">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="571666543599117" type="Keyboard">
+                            <param id="0" name="Key">87</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="910122203234638" type="Golondrina">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="138617871006030">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="410340506190221" type="Keyboard">
+                            <param id="0" name="Key">83</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="541485595583539" type="Golondrina">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="782361333793388">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="422362400152742" type="Keyboard">
+                            <param id="0" name="Key">65</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="771362000327015" type="Golondrina">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="556907176912468">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="451422741631493" type="Keyboard">
+                            <param id="0" name="Key">68</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="638147447108279" type="Golondrina">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
