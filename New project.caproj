@@ -16,8 +16,8 @@
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
-        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
         <plugin author="Scirra" id="sliderbar" version="1">Slider bar</plugin>
     </used-plugins>
     <used-behaviors>
@@ -317,7 +317,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
-	</object-type>
+        </object-type>
         <object-type name="TextBox2" sid="319820879624582">
             <plugin id="TextBox" />
         </object-type>
@@ -339,10 +339,8 @@
         <event-sheet>creditos.xml</event-sheet>
     </event-folder>
     <global-instances>
-<<<<<<< HEAD
-        <global-instance type="Keyboard" uid="3" />
-        <global-instance type="Mouse" uid="4" />
-        <global-instance type="Audio" uid="13">
+        <global-instance type="Mouse" uid="30" />
+        <global-instance type="Audio" uid="31">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -356,15 +354,12 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="Gamepad" uid="14">
+        <global-instance type="Gamepad" uid="32">
             <properties>
                 <analog-deadzone>25</analog-deadzone>
             </properties>
         </global-instance>
-=======
-        <global-instance type="Keyboard" uid="22" />
-        <global-instance type="Mouse" uid="23" />
->>>>>>> master
+        <global-instance type="Keyboard" uid="33" />
     </global-instances>
     <sounds-folder />
     <music-folder>
