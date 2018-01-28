@@ -25,6 +25,7 @@
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
     </used-behaviors>
     <used-effects />
@@ -324,6 +325,45 @@
         <object-type name="Text3" sid="387492655747034">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Nube" sid="225201246790585">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="656872696276119">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="122733844958031">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="441433951606992" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503356" original-source="C:\Users\Andrea\Desktop\poison_mist.png">
+                        <collision-poly>
+                            <point x="0.201031" y="0.261745" />
+                            <point x="0.5" y="0.0939597" />
+                            <point x="0.876289" y="0.161074" />
+                            <point x="0.865979" y="0.496644" />
+                            <point x="0.809278" y="0.751678" />
+                            <point x="0.5" y="0.805369" />
+                            <point x="0.134021" y="0.825503" />
+                            <point x="0.0721649" y="0.496644" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GeneradorNube" sid="916301312667954">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="978011511128502" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.520833">
+                        <image-point name="1" x="0.5" y="0.120833" />
+                        <image-point name="2" x="0.5" y="0.416667" />
+                        <image-point name="3" x="0.5" y="0.879167" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -339,8 +379,8 @@
         <event-sheet>creditos.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="30" />
-        <global-instance type="Audio" uid="31">
+        <global-instance type="Mouse" uid="32" />
+        <global-instance type="Audio" uid="33">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -354,12 +394,12 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="Gamepad" uid="32">
+        <global-instance type="Gamepad" uid="34">
             <properties>
                 <analog-deadzone>25</analog-deadzone>
             </properties>
         </global-instance>
-        <global-instance type="Keyboard" uid="33" />
+        <global-instance type="Keyboard" uid="35" />
     </global-instances>
     <sounds-folder />
     <music-folder>
