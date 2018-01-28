@@ -171,11 +171,16 @@
                 </event-block>
                 <event-block sid="446645469751353">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="663754172459318" type="Mensaje">
+                        <condition id="1" name="Is overlapping another object" sid="205546273091907" type="Mensaje">
                             <param id="0" name="Object">Suelo</param>
                         </condition>
+                        <condition id="-4" name="Trigger once while true" sid="937082452364887" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-11" name="Subtract from" sid="887880103448610" type="System">
+                            <param id="0" name="Variable">Vidas_mensajes</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                         <action id="-15" name="Set visible" sid="538528079685883" type="Perdiste">
                             <param id="0" name="Visibility">1</param>
                         </action>
@@ -194,10 +199,6 @@
                         <action id="-4" name="Set position to another object" sid="297553035838158" type="Volver">
                             <param id="0" name="Object">Volver_menu</param>
                             <param id="1" name="Image point (optional)">1</param>
-                        </action>
-                        <action id="-11" name="Subtract from" sid="887880103448610" type="System">
-                            <param id="0" name="Variable">Vidas_mensajes</param>
-                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -329,7 +330,7 @@
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="942595417505532" type="System">
                             <param id="0" name="Variable">Vidas_mensajes</param>
-                            <param id="1" name="Comparison">0</param>
+                            <param id="1" name="Comparison">3</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
@@ -355,6 +356,9 @@
                         <action id="-4" name="Set position to another object" sid="677969467658491" type="Volver">
                             <param id="0" name="Object">Volver_menu</param>
                             <param id="1" name="Image point (optional)">1</param>
+                        </action>
+                        <action id="6" name="Stop" sid="262120956854525" type="Audio">
+                            <param id="0" name="Tag">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>
@@ -535,6 +539,9 @@
                 <action id="-2" name="Go to layout" sid="826354553075784" type="System">
                     <param id="0" name="Layout">Menu</param>
                 </action>
+                <action id="6" name="Stop" sid="556272476438710" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="773731495768846">
@@ -549,6 +556,9 @@
                 <action id="-2" name="Go to layout" sid="219091681915541" type="System">
                     <param id="0" name="Layout">Menu</param>
                 </action>
+                <action id="6" name="Stop" sid="467078865313274" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="789850442875768">
@@ -560,6 +570,22 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="758342288791537" type="System">
                     <param id="0" name="Layout">Menu</param>
+                </action>
+                <action id="6" name="Stop" sid="852334073474456" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="356813006400596">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="743231244289405" type="Keyboard">
+                    <param id="0" name="Key">82</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="630752134766995" type="System" />
+                <action id="6" name="Stop" sid="108604858629326" type="Audio">
+                    <param id="0" name="Tag">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
