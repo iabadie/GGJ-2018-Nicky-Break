@@ -37,6 +37,45 @@
                 <action behavior="Platform" id="12" name="Fall through" sid="726546960509575" type="Golondrina" />
             </actions>
         </event-block>
+        <event-block sid="454473210511272">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="968464214012536" type="NubeTóxica">
+                    <param id="0" name="Object">Golondrina</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="11" name="Set enabled" sid="969395433320936" type="Golondrina">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Platform" id="12" name="Fall through" sid="234850915373391" type="Golondrina" />
+            </actions>
+        </event-block>
+        <event-block sid="200366919384593">
+            <conditions>
+                <condition id="2" name="Key is down" sid="804897986747012" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="273293250122797" type="Bazuka">
+                    <param id="0" name="Angle">180</param>
+                    <param id="1" name="Distance">5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="603751330821372">
+            <conditions>
+                <condition id="2" name="Key is down" sid="259916678593908" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-23" name="Move at angle" sid="869672349633285" type="Bazuka">
+                    <param id="0" name="Angle">360</param>
+                    <param id="1" name="Distance">5</param>
+                </action>
+            </actions>
+        </event-block>
         <event-block sid="237500062697813">
             <conditions>
                 <condition id="-14" name="Compare variable" sid="663985904081385" type="System">
@@ -88,8 +127,8 @@
             </conditions>
             <actions>
                 <action id="-3" name="Set position" sid="878762046093549" type="Ganaste">
-                    <param id="0" name="X">1953</param>
-                    <param id="1" name="Y">207</param>
+                    <param id="0" name="X">4973</param>
+                    <param id="1" name="Y">209</param>
                 </action>
                 <action id="-15" name="Set visible" sid="909092835103155" type="Ganaste">
                     <param id="0" name="Visibility">1</param>
@@ -144,6 +183,60 @@
                 <action id="-9" name="Set value" sid="333318357694814" type="System">
                     <param id="0" name="Variable">torreta_shoot</param>
                     <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="993921161352735">
+            <conditions>
+                <condition id="-18" name="On created" sid="950369840869856" type="Nube" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="961657222179519">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="770202038276585" type="System">
+                    <param id="0" name="Interval (seconds)">12</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="337370659211490" type="GeneradorNube">
+                    <param id="0" name="Object">Nube</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">choose(&quot;1&quot;,&quot;2&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="247651453058776">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="128022986190002" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="932602917012086" type="GeneradorNube">
+                    <param id="0" name="X">scrollx + 460</param>
+                    <param id="1" name="Y">scrolly - 200</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="445804120837538">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="569541475492074" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="887883110390370" type="Golondrina">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="371521061887660">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="759293416468143" type="Golondrina">
+                    <param id="0" name="Object">StopScroll</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="917094879411665" type="Golondrina">
+                    <param id="0" name="State">0</param>
                 </action>
             </actions>
         </event-block>
