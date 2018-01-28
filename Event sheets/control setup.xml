@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>control setup</name>
+    <events>
+        <event-block sid="519171423055513">
+            <conditions>
+                <condition id="5" name="Compare axis" sid="595684729710827" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">2</param>
+                    <param id="3" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="461119009564978" type="Golondrina">
+                    <param id="0" name="X">Golondrina.X - 3</param>
+                    <param id="1" name="Y">Golondrina.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="842903483120743">
+            <conditions>
+                <condition id="5" name="Compare axis" sid="193786536442402" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">0</param>
+                    <param id="2" name="Comparison">4</param>
+                    <param id="3" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="469776073975555" type="Golondrina">
+                    <param id="0" name="X">Golondrina.X + 3</param>
+                    <param id="1" name="Y">Golondrina.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="726659184435378">
+            <conditions>
+                <condition id="5" name="Compare axis" sid="676132372414823" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">3</param>
+                    <param id="2" name="Comparison">2</param>
+                    <param id="3" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="119943962171891" type="Golondrina">
+                    <param id="0" name="X">Golondrina.X </param>
+                    <param id="1" name="Y">Golondrina.Y - 3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="277754640643034">
+            <conditions>
+                <condition id="5" name="Compare axis" sid="790368712669052" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Axis">3</param>
+                    <param id="2" name="Comparison">4</param>
+                    <param id="3" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="636481128232856" type="Golondrina">
+                    <param id="0" name="X">Golondrina.X</param>
+                    <param id="1" name="Y">Golondrina.Y + 3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="547973765530824">
+            <conditions>
+                <condition id="3" name="Is button down" sid="340883246509726" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">14</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="902863369868931" type="Golondrina">
+                    <param id="0" name="X">Golondrina.X - 3</param>
+                    <param id="1" name="Y">Golondrina.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="956006703432250">
+            <conditions>
+                <condition id="3" name="Is button down" sid="417154170099409" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">15</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="887947357118595" type="Golondrina">
+                    <param id="0" name="X">Golondrina.X + 3</param>
+                    <param id="1" name="Y">Golondrina.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="689770143312242">
+            <conditions>
+                <condition id="3" name="Is button down" sid="205399808333664" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">12</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="104811141177651" type="Golondrina">
+                    <param id="0" name="X">Golondrina.X </param>
+                    <param id="1" name="Y">Golondrina.Y - 3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="596117836255169">
+            <conditions>
+                <condition id="3" name="Is button down" sid="290632738072413" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="307364788337461" type="Golondrina">
+                    <param id="0" name="X">Golondrina.X</param>
+                    <param id="1" name="Y">Golondrina.Y + 3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="660243340138873">
+            <conditions>
+                <condition id="6" name="On button pressed" sid="475270014282053" type="Gamepad">
+                    <param id="0" name="Gamepad">0</param>
+                    <param id="1" name="Button">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="688824503284716" type="System">
+                    <param id="0" name="Variable">Mensaje</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Arriba controles user 1</comment>
+    </events>
+</c2eventsheet>
