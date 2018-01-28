@@ -4,7 +4,7 @@
     <sid>789920425883607</sid>
     <event-sheet>EVProt</event-sheet>
     <size>
-        <width>2500</width>
+        <width>5500</width>
         <height>480</height>
     </size>
     <margins>
@@ -71,11 +71,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>87.5</x>
-                        <y>183.5</y>
+                        <x>102</x>
+                        <y>140</y>
                         <z>0</z>
-                        <width>59</width>
-                        <height>62</height>
+                        <width>75.365127563</width>
+                        <height>93.544578552</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -171,8 +171,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2076</x>
-                        <y>459</y>
+                        <x>5036</x>
+                        <y>460</y>
                         <z>0</z>
                         <width>30</width>
                         <height>38</height>
@@ -222,14 +222,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>329</x>
-                        <y>142</y>
+                        <x>319.66619873</x>
+                        <y>157.267196655</y>
                         <z>0</z>
-                        <width>47</width>
-                        <height>40</height>
+                        <width>29</width>
+                        <height>19</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotY>-0.097938143</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -244,10 +244,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1018.5</x>
+                        <x>2502</x>
                         <y>478</y>
                         <z>0</z>
-                        <width>2039</width>
+                        <width>5006</width>
                         <height>20</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -266,10 +266,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>2305.5</x>
-                        <y>477</y>
+                        <x>5285</x>
+                        <y>480</y>
                         <z>0</z>
-                        <width>395</width>
+                        <width>431</width>
                         <height>-24</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -293,8 +293,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>1948</x>
-                        <y>-171</y>
+                        <x>4902</x>
+                        <y>209</y>
                         <z>0</z>
                         <width>398</width>
                         <height>108</height>
@@ -306,14 +306,14 @@
                     </world>
                 </instance>
                 <instance type="Nube" uid="0">
-                    <properties>
+					<properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Bullet">
+					<behavior-instances>
+						<behavior-instance type="Bullet">
                             <properties>
                                 <speed>40</speed>
                                 <acceleration>0</acceleration>
@@ -324,11 +324,11 @@
                             </properties>
                         </behavior-instance>
                         <behavior-instance type="DestroyOutsideLayout" />
-                    </behavior-instances>
+					</behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>235</x>
+						<x>235</x>
                         <y>651</y>
                         <z>0</z>
                         <width>196.950714111</width>
@@ -336,7 +336,243 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.503355682</hotspotY>
+						<angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="torreta" uid="12">
+					<properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+					<behavior-instances>
+						<behavior-instance type="Turret">
+                            <properties>
+                                <range>1000</range>
+                                <rate-of-fire>1</rate-of-fire>
+                                <rotate>Yes</rotate>
+                                <rotate-speed>180</rotate-speed>
+                                <target-mode>First in range</target-mode>
+                                <predictive-aim>No</predictive-aim>
+                                <projectile-speed>500</projectile-speed>
+                                <initial-state>Enabled</initial-state>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+					</behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+					<x>1099</x>
+                        <y>447</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>47</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>-1.566908956</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="NubeTóxica" uid="17">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1485</x>
+                        <y>93</y>
+                        <z>0</z>
+                        <width>65</width>
+                        <height>65</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="torreta" uid="16">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Turret">
+                            <properties>
+                                <range>1000</range>
+                                <rate-of-fire>1</rate-of-fire>
+                                <rotate>Yes</rotate>
+                                <rotate-speed>180</rotate-speed>
+                                <target-mode>First in range</target-mode>
+                                <predictive-aim>No</predictive-aim>
+                                <projectile-speed>500</projectile-speed>
+                                <initial-state>Enabled</initial-state>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1978</x>
+                        <y>452</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>47</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>-1.566908956</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="torreta" uid="19">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Turret">
+                            <properties>
+                                <range>1000</range>
+                                <rate-of-fire>1</rate-of-fire>
+                                <rotate>Yes</rotate>
+                                <rotate-speed>180</rotate-speed>
+                                <target-mode>First in range</target-mode>
+                                <predictive-aim>No</predictive-aim>
+                                <projectile-speed>500</projectile-speed>
+                                <initial-state>Enabled</initial-state>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3030</x>
+                        <y>456</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>47</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>-1.566908956</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="torreta" uid="20">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Turret">
+                            <properties>
+                                <range>1000</range>
+                                <rate-of-fire>1</rate-of-fire>
+                                <rotate>Yes</rotate>
+                                <rotate-speed>180</rotate-speed>
+                                <target-mode>First in range</target-mode>
+                                <predictive-aim>No</predictive-aim>
+                                <projectile-speed>500</projectile-speed>
+                                <initial-state>Enabled</initial-state>
+                                <use-collision-cells>Yes</use-collision-cells>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3911</x>
+                        <y>450</y>
+                        <z>0</z>
+                        <width>16</width>
+                        <height>47</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>-1.566908956</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="StopScroll" uid="23">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>5032</x>
+                        <y>242</y>
+                        <z>0</z>
+                        <width>24</width>
+                        <height>480</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="NubeTóxica" uid="18">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3509</x>
+                        <y>138</y>
+                        <z>0</z>
+                        <width>65</width>
+                        <height>65</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="NubeTóxica" uid="21">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2554</x>
+                        <y>227</y>
+                        <z>0</z>
+                        <width>65</width>
+                        <height>65</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+						<angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -387,7 +623,7 @@
                     </world>
                 </instance>
                 <instance type="GeneradorNube" uid="1">
-                    <properties>
+					<properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
@@ -396,7 +632,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>875</x>
+						<x>875</x>
                         <y>218</y>
                         <z>0</z>
                         <width>20</width>
@@ -405,7 +641,51 @@
                         <hotspotX>0.492000014</hotspotX>
                         <hotspotY>0.519999981</hotspotY>
                         <angle>3.139954805</angle>
+						<opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Explosión" uid="15">
+					<properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+						<x>-144.723693848</x>
+                        <y>145.527770996</y>
+                        <z>0</z>
+                        <width>82.725563049</width>
+                        <height>97.71207428</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
                         <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sprite3" uid="22">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4643</x>
+                        <y>243.5</y>
+                        <z>0</z>
+                        <width>47</width>
+                        <height>484</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+						<opacity>1</opacity>
                     </world>
                 </instance>
             </instances>
