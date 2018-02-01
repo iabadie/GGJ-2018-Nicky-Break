@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EvUI</name>
+    <events>
+        <include>GlobalUI</include>
+        <event-block sid="861125025612902">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="552873630352966" type="System" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="317613272145742" type="System">
+                    <param id="0" name="Layout">Nivel1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="581248940278831" type="ConteoMsjs">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

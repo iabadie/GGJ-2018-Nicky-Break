@@ -3,589 +3,574 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EVNivel1</name>
     <events>
+        <variable constant="0" name="Pausa" sid="936872224870056" static="0" type="number">0</variable>
         <variable constant="0" name="Disparo" sid="771082153733608" static="0" type="number">0</variable>
         <variable constant="0" name="JuegoComenzado" sid="365035278775193" static="0" type="number">0</variable>
         <variable constant="0" name="Vidas_mensajes" sid="750208759800399" static="0" type="number">3</variable>
-        <include>EvPersonajes</include>
         <variable constant="0" name="Mensaje" sid="667110846235539" static="0" type="number">0</variable>
         <variable constant="0" name="torreta_shoot" sid="945505525806178" static="0" type="number">1</variable>
-        <event-group description="" sid="524224149925954" title="Group">
-            <sub-events>
-                <event-block sid="563513298672996">
-                    <conditions>
-                        <condition id="1" name="On any click" sid="561054162029184" type="Mouse" />
-                        <condition id="-14" name="Compare variable" sid="590057679682878" type="System">
-                            <param id="0" name="Variable">Disparo</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="768230149391352" type="System">
-                            <param id="0" name="Variable">Disparo</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="364523953123988" type="Bazuka">
-                            <param id="0" name="Object">Proyectil</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">1</param>
-                        </action>
-                        <action behavior="Bullet" id="1" name="Set acceleration" sid="595525724465557" type="Proyectil">
-                            <param id="0" name="Acceleration">100</param>
-                        </action>
-                        <action id="-22" name="Set angle toward position" sid="332825195031247" type="Proyectil">
-                            <param id="0" name="X">mouse.X</param>
-                            <param id="1" name="Y">mouse.Y</param>
-                        </action>
-                        <action id="0" name="Play" sid="863097103532708" type="Audio">
-                            <param id="0" name="Audio file">Tiro_Mayor</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="322171417629065">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="366846718843312" type="System">
-                            <param id="0" name="Variable">Disparo</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Wait" sid="424023886438771" type="System">
-                            <param id="0" name="Seconds">2</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="254882285741509" type="System">
-                            <param id="0" name="Variable">Disparo</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="601038441901641">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="912021012177408" type="Proyectil">
-                            <param id="0" name="Object">Golondrina</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="11" name="Set enabled" sid="712305541940767" type="Golondrina">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="Platform" id="12" name="Fall through" sid="726546960509575" type="Golondrina" />
-                    </actions>
-                </event-block>
-                <event-block sid="454473210511272">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="968464214012536" type="Nube">
-                            <param id="0" name="Object">Golondrina</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="11" name="Set enabled" sid="969395433320936" type="Golondrina">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="Platform" id="12" name="Fall through" sid="234850915373391" type="Golondrina" />
-                    </actions>
-                </event-block>
-                <event-block sid="237500062697813">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="663985904081385" type="System">
-                            <param id="0" name="Variable">Mensaje</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-4" name="Set position to another object" sid="981571214151905" type="Mensaje">
-                            <param id="0" name="Object">Golondrina</param>
-                            <param id="1" name="Image point (optional)">&quot;IP1&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="351402070190249">
-                    <conditions>
-                        <condition id="2" name="Key is down" sid="883698701170372" type="Keyboard">
-                            <param id="0" name="Key">32</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="964982299848283" type="System">
-                            <param id="0" name="Variable">Mensaje</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="150357351284030">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="464483149368876" type="System">
-                            <param id="0" name="Variable">Mensaje</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="11" name="Set enabled" sid="629847982831472" type="Mensaje">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action behavior="Platform" id="12" name="Fall through" sid="525861516571034" type="Mensaje" />
-                    </actions>
-                </event-block>
-                <event-block sid="800280286829693">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="966997668436322" type="Mensaje">
-                            <param id="0" name="Object">Receptáculo</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Destroy" sid="927440700270216" type="Perdiste" />
-                        <action id="-3" name="Create object" sid="304106763437215" type="System">
-                            <param id="0" name="Object to create">BackMenu</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">Receptáculo.X - 40</param>
-                            <param id="3" name="Y">340</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="227229545996243" type="System">
-                            <param id="0" name="Object to create">Back</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">Receptáculo.X - 80</param>
-                            <param id="3" name="Y">330</param>
-                        </action>
-                        <action id="-3" name="Create object" sid="362521600234257" type="System">
-                            <param id="0" name="Object to create">Ganaste</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="X">Receptáculo.X - 80</param>
-                            <param id="3" name="Y">230</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="909092835103155" type="Back">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="617336584538203" type="BackMenu">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="876751327736242" type="Ganaste">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="446645469751353">
-                    <conditions>
-                        <condition id="1" name="Is overlapping another object" sid="205546273091907" type="Mensaje">
-                            <param id="0" name="Object">Suelo</param>
-                        </condition>
-                        <condition id="-4" name="Trigger once while true" sid="937082452364887" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-11" name="Subtract from" sid="887880103448610" type="System">
-                            <param id="0" name="Variable">Vidas_mensajes</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="538528079685883" type="Perdiste">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="158338485881314" type="Sprite5">
-                            <param id="0" name="X">scrollx</param>
-                            <param id="1" name="Y">303</param>
-                        </action>
-                        <action id="-4" name="Set position to another object" sid="351538609152447" type="Retry">
-                            <param id="0" name="Object">Sprite5</param>
-                            <param id="1" name="Image point (optional)">1</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="387911166670350" type="Volver_menu">
-                            <param id="0" name="X">scrollx</param>
-                            <param id="1" name="Y">363</param>
-                        </action>
-                        <action id="-4" name="Set position to another object" sid="297553035838158" type="Volver">
-                            <param id="0" name="Object">Volver_menu</param>
-                            <param id="1" name="Image point (optional)">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="728878689384668">
-                    <conditions>
-                        <condition id="-18" name="On created" sid="288144343471441" type="torreta" />
-                    </conditions>
-                    <actions>
-                        <action behavior="Turret" id="1" name="Add object to target" sid="896072448575100" type="torreta">
-                            <param id="0" name="Target">Golondrina</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="140121910070756">
-                    <conditions>
-                        <condition id="-3" name="Is on-screen" sid="820276714512822" type="torreta" />
-                        <condition behavior="Turret" id="0" name="Has target" sid="380937900311904" type="torreta" />
-                        <condition id="-14" name="Compare variable" sid="116659071733885" type="System">
-                            <param id="0" name="Variable">torreta_shoot</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="102243312802778" type="System">
-                            <param id="0" name="Variable">torreta_shoot</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="0" name="Spawn another object" sid="958417034448677" type="torreta">
-                            <param id="0" name="Object">Proyectil</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">0</param>
-                        </action>
-                        <action id="0" name="Play" sid="180063503628482" type="Audio">
-                            <param id="0" name="Audio file">Tiro_Mini</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="708816340264043" type="System">
-                            <param id="0" name="Seconds">2</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="333318357694814" type="System">
-                            <param id="0" name="Variable">torreta_shoot</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="961657222179519">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="770202038276585" type="System">
-                            <param id="0" name="Interval (seconds)">12</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="0" name="Spawn another object" sid="337370659211490" type="GeneradorNube">
-                            <param id="0" name="Object">Nube</param>
-                            <param id="1" name="Layer">0</param>
-                            <param id="2" name="Image point">choose(&quot;1&quot;,&quot;2&quot;)</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="247651453058776">
-                    <conditions>
-                        <condition id="-1" name="Every tick" sid="128022986190002" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-3" name="Set position" sid="932602917012086" type="GeneradorNube">
-                            <param id="0" name="X">scrollx + 460</param>
-                            <param id="1" name="Y">scrolly - 200</param>
-                        </action>
-                        <action id="-4" name="Set position to another object" sid="326232997029158" type="Retry">
-                            <param id="0" name="Object">config1</param>
-                            <param id="1" name="Image point (optional)">1</param>
-                        </action>
-                        <action id="-4" name="Set position to another object" sid="102347413698592" type="Volver">
-                            <param id="0" name="Object">Volver_menu</param>
-                            <param id="1" name="Image point (optional)">1</param>
-                        </action>
-                        <action id="-4" name="Set position to another object" sid="563172547854926" type="TryAgain">
-                            <param id="0" name="Object">Retry_1</param>
-                            <param id="1" name="Image point (optional)">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="445804120837538">
-                    <conditions>
-                        <condition id="-2" name="On start of layout" sid="569541475492074" type="System" />
-                    </conditions>
-                    <actions>
-                        <action id="-13" name="Set time scale" sid="354339149129355" type="System">
-                            <param id="0" name="Time scale">1.0</param>
-                        </action>
-                        <action id="4" name="Set animation" sid="887883110390370" type="Golondrina">
-                            <param id="0" name="Animation">&quot;Default&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                        <action behavior="Platform" id="11" name="Set enabled" sid="208879791513243" type="Golondrina">
-                            <param id="0" name="State">0</param>
-                        </action>
-                        <action behavior="Platform" id="11" name="Set enabled" sid="593887616673610" type="Mensaje">
-                            <param id="0" name="State">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="888404543455750" type="System">
-                            <param id="0" name="Variable">Mensaje</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="0" name="Play" sid="185264932795055" type="Audio">
-                            <param id="0" name="Audio file">Xilofone</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;Xilo&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="371521061887660">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="759293416468143" type="Golondrina">
-                            <param id="0" name="Object">StopScroll</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="ScrollTo" id="1" name="Set enabled" sid="917094879411665" type="Golondrina">
-                            <param id="0" name="State">0</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="283026578442747">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="942595417505532" type="System">
-                            <param id="0" name="Variable">Vidas_mensajes</param>
-                            <param id="1" name="Comparison">3</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-15" name="Set visible" sid="844069221089558" type="Perdiste">
-                            <param id="0" name="Visibility">0</param>
-                        </action>
-                        <action id="-15" name="Set visible" sid="617442554137922" type="BuenaSuerte">
-                            <param id="0" name="Visibility">1</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="994585660244389" type="Retry_1">
-                            <param id="0" name="X">scrollx</param>
-                            <param id="1" name="Y">303</param>
-                        </action>
-                        <action id="-4" name="Set position to another object" sid="525983122912916" type="TryAgain">
-                            <param id="0" name="Object">Retry_1</param>
-                            <param id="1" name="Image point (optional)">1</param>
-                        </action>
-                        <action id="-3" name="Set position" sid="661051274100848" type="Volver_menu">
-                            <param id="0" name="X">scrollx</param>
-                            <param id="1" name="Y">363</param>
-                        </action>
-                        <action id="-4" name="Set position to another object" sid="677969467658491" type="Volver">
-                            <param id="0" name="Object">Volver_menu</param>
-                            <param id="1" name="Image point (optional)">1</param>
-                        </action>
-                        <action id="6" name="Stop" sid="262120956854525" type="Audio">
-                            <param id="0" name="Tag">&quot;&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="959410404219967">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="117522183575037" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">Sprite5</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-26" name="Restart layout" sid="902303634649333" type="System" />
-                        <action id="6" name="Stop" sid="573266492590926" type="Audio">
-                            <param id="0" name="Tag">&quot;Xilo&quot;</param>
-                        </action>
-                        <action id="6" name="Stop" sid="632153740562401" type="Audio">
-                            <param id="0" name="Tag">&quot;Acid&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="868375550265801">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="811657192093033" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">Volver_menu</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-2" name="Go to layout" sid="767597585114442" type="System">
-                            <param id="0" name="Layout">Menu</param>
-                        </action>
-                        <action id="6" name="Stop" sid="563342587619205" type="Audio">
-                            <param id="0" name="Tag">&quot;Xilo&quot;</param>
-                        </action>
-                        <action id="6" name="Stop" sid="280017329608266" type="Audio">
-                            <param id="0" name="Tag">&quot;Acid&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="320697454192449">
-                    <conditions>
-                        <condition id="6" name="On object clicked" sid="333491373501492" type="Mouse">
-                            <param id="0" name="Mouse button">0</param>
-                            <param id="1" name="Click type">0</param>
-                            <param id="2" name="Object clicked">Retry_1</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="933792276329615" type="System">
-                            <param id="0" name="Variable">Vidas_mensajes</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-26" name="Restart layout" sid="703610858590401" type="System" />
-                        <action id="-21" name="Reset global variables" sid="673278934497197" type="System" />
-                        <action id="6" name="Stop" sid="865265879486841" type="Audio">
-                            <param id="0" name="Tag">&quot;Xilo&quot;</param>
-                        </action>
-                        <action id="6" name="Stop" sid="231737860919998" type="Audio">
-                            <param id="0" name="Tag">&quot;Acid&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="133113642038436">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="360285237352227" type="Golondrina">
-                            <param id="0" name="Object">Sprite3</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="3" name="Set volume" sid="822716666669741" type="Audio">
-                            <param id="0" name="Tag">&quot;Xilo&quot;</param>
-                            <param id="1" name="dB">-100</param>
-                        </action>
-                        <action id="0" name="Play" sid="836680215146075" type="Audio">
-                            <param id="0" name="Audio file">Acido</param>
-                            <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">0</param>
-                            <param id="1" name="Tag (optional)">&quot;Acid&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="482763689643640">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="495658043377005" type="System">
-                            <param id="0" name="Variable">configSonido</param>
-                            <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="33" name="Stop all" sid="620874094791730" type="Audio" />
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
-        <event-block sid="879329870316634">
+        <include>EvPersonajes</include>
+        <include>GlobalUI</include>
+        <event-block sid="879005536868282">
             <conditions>
-                <condition id="2" name="Key is down" sid="903921228118738" type="Keyboard">
-                    <param id="0" name="Key">80</param>
+                <condition id="1" name="On any click" sid="449989378612196" type="Mouse" />
+                <condition id="-14" name="Compare variable" sid="629383496880921" type="System">
+                    <param id="0" name="Variable">Disparo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-12" name="Set group active" sid="442002315053382" type="System">
-                    <param id="0" name="Group name">&quot;Group&quot;</param>
-                    <param id="1" name="State">0</param>
+                <action id="-9" name="Set value" sid="498700832483458" type="System">
+                    <param id="0" name="Variable">Disparo</param>
+                    <param id="1" name="Value">0</param>
                 </action>
-                <action id="-12" name="Set group active" sid="224472148667293" type="System">
-                    <param id="0" name="Group name">&quot;Group2&quot;</param>
-                    <param id="1" name="State">0</param>
+                <action id="0" name="Spawn another object" sid="430462747046412" type="Bazuka">
+                    <param id="0" name="Object">Proyectil</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">1</param>
                 </action>
-                <action id="-12" name="Set group active" sid="264883953873232" type="System">
-                    <param id="0" name="Group name">&quot;Group3&quot;</param>
-                    <param id="1" name="State">0</param>
+                <action behavior="Bullet" id="1" name="Set acceleration" sid="144004107061680" type="Proyectil">
+                    <param id="0" name="Acceleration">100</param>
                 </action>
-                <action id="-12" name="Set group active" sid="456127238798854" type="System">
-                    <param id="0" name="Group name">&quot;Group4&quot;</param>
-                    <param id="1" name="State">0</param>
+                <action id="-22" name="Set angle toward position" sid="826897738219550" type="Proyectil">
+                    <param id="0" name="X">mouse.X</param>
+                    <param id="1" name="Y">mouse.Y</param>
                 </action>
-                <action id="2" name="Set visible" sid="506176204976157" type="Pause">
+                <action id="0" name="Play" sid="577216735212444" type="Audio">
+                    <param id="0" name="Audio file">Tiro_Mayor</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="622635209643460">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="185658972957925" type="System">
+                    <param id="0" name="Variable">Disparo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="135809467787464" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-9" name="Set value" sid="267315995272919" type="System">
+                    <param id="0" name="Variable">Disparo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="668910556878997">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="548072643634335" type="Proyectil">
+                    <param id="0" name="Object">Golondrina</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="11" name="Set enabled" sid="244280586668843" type="Golondrina">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Platform" id="12" name="Fall through" sid="483114018517708" type="Golondrina" />
+            </actions>
+        </event-block>
+        <event-block sid="525625668785338">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="640393453115827" type="Nube">
+                    <param id="0" name="Object">Golondrina</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="11" name="Set enabled" sid="730648398364084" type="Golondrina">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Platform" id="12" name="Fall through" sid="765221694795749" type="Golondrina" />
+            </actions>
+        </event-block>
+        <event-block sid="702818217522069">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="695087473480240" type="System">
+                    <param id="0" name="Variable">Mensaje</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="250348012198439" type="Mensaje">
+                    <param id="0" name="Object">Golondrina</param>
+                    <param id="1" name="Image point (optional)">&quot;IP1&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="966714190376087">
+            <conditions>
+                <condition id="2" name="Key is down" sid="341084417810644" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="439881506089212" type="System">
+                    <param id="0" name="Variable">Mensaje</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="936399191491158">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="889670477353388" type="System">
+                    <param id="0" name="Variable">Mensaje</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="11" name="Set enabled" sid="511892718836157" type="Mensaje">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Platform" id="12" name="Fall through" sid="383610807421329" type="Mensaje" />
+            </actions>
+        </event-block>
+        <event-block sid="483570626688214">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="399469228899597" type="Mensaje">
+                    <param id="0" name="Object">Receptáculo</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="235765519388917" type="System">
+                    <param id="0" name="Variable">Pausa</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="353332913692342" type="Great">
+                    <param id="0" name="X">scrollx</param>
+                    <param id="1" name="Y">186</param>
+                </action>
+                <action id="-15" name="Set visible" sid="338503607896599" type="Great">
                     <param id="0" name="Visibility">1</param>
                 </action>
-                <action id="2" name="Set muted" sid="581689925305249" type="Audio">
-                    <param id="0" name="Tag">&quot;&quot;</param>
-                    <param id="1" name="State">0</param>
+                <action id="-15" name="Set visible" sid="204758831620637" type="Back">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="173939349937556" type="Back">
+                    <param id="0" name="Object">BackMenuButton2</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="529247386057491" type="BackMenuButton2">
+                    <param id="0" name="X">scrollx</param>
+                    <param id="1" name="Y">313</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="197135506585489">
+        <event-block sid="250798970713993">
             <conditions>
-                <condition id="2" name="Key is down" sid="232941927959027" type="Keyboard">
-                    <param id="0" name="Key">66</param>
+                <condition id="1" name="Is overlapping another object" sid="968081073120652" type="Mensaje">
+                    <param id="0" name="Object">Suelo</param>
+                </condition>
+                <condition id="-4" name="Trigger once while true" sid="363199750657240" type="System" />
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="562594343134045" type="System">
+                    <param id="0" name="Variable">Vidas_mensajes</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="660657955513713" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="595877752672807" type="System">
+                    <param id="0" name="Variable">Pausa</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="478705184195448" type="Oops">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="390118218134979" type="Oops">
+                    <param id="0" name="X">scrollx</param>
+                    <param id="1" name="Y">190</param>
+                </action>
+                <action id="-3" name="Set position" sid="927107629592084" type="RetryButton">
+                    <param id="0" name="X">scrollx</param>
+                    <param id="1" name="Y">303</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="287034430974549" type="Retry">
+                    <param id="0" name="Object">RetryButton</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="900444059682522" type="BackMenuButton">
+                    <param id="0" name="X">scrollx</param>
+                    <param id="1" name="Y">363</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="663650554863355" type="Volver">
+                    <param id="0" name="Object">BackMenuButton</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="405489123490050" type="Volver">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="768848265856416">
+            <conditions>
+                <condition id="-18" name="On created" sid="171089282800395" type="torreta" />
+            </conditions>
+            <actions>
+                <action behavior="Turret" id="1" name="Add object to target" sid="633754496885706" type="torreta">
+                    <param id="0" name="Target">Golondrina</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="790884827853912">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="939611562018802" type="torreta" />
+                <condition behavior="Turret" id="0" name="Has target" sid="583557566522358" type="torreta" />
+                <condition id="-14" name="Compare variable" sid="486986347357522" type="System">
+                    <param id="0" name="Variable">torreta_shoot</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-12" name="Set group active" sid="460371635414027" type="System">
-                    <param id="0" name="Group name">&quot;Group&quot;</param>
-                    <param id="1" name="State">1</param>
+                <action id="-9" name="Set value" sid="405467875398116" type="System">
+                    <param id="0" name="Variable">torreta_shoot</param>
+                    <param id="1" name="Value">0</param>
                 </action>
-                <action id="-12" name="Set group active" sid="656845944357747" type="System">
-                    <param id="0" name="Group name">&quot;Group2&quot;</param>
-                    <param id="1" name="State">1</param>
+                <action id="0" name="Spawn another object" sid="397257763176219" type="torreta">
+                    <param id="0" name="Object">Proyectil</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
                 </action>
-                <action id="-12" name="Set group active" sid="956555517336346" type="System">
-                    <param id="0" name="Group name">&quot;Group3&quot;</param>
-                    <param id="1" name="State">1</param>
+                <action id="0" name="Play" sid="343873938517679" type="Audio">
+                    <param id="0" name="Audio file">Tiro_Mini</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
-                <action id="-12" name="Set group active" sid="273924721264525" type="System">
-                    <param id="0" name="Group name">&quot;Group4&quot;</param>
-                    <param id="1" name="State">1</param>
+                <action id="-16" name="Wait" sid="629180328715908" type="System">
+                    <param id="0" name="Seconds">2</param>
                 </action>
-                <action id="2" name="Set visible" sid="244864189429152" type="Pause">
+                <action id="-9" name="Set value" sid="723518967899973" type="System">
+                    <param id="0" name="Variable">torreta_shoot</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="101667024459926">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="271192095849578" type="System">
+                    <param id="0" name="Interval (seconds)">12</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="809842080656688" type="GeneradorNube">
+                    <param id="0" name="Object">Nube</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">choose(&quot;1&quot;,&quot;2&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="945348498207069">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="855898100147719" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="426185086174755" type="GeneradorNube">
+                    <param id="0" name="X">scrollx + 460</param>
+                    <param id="1" name="Y">scrolly - 200</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="101744836259797" type="Retry">
+                    <param id="0" name="Object">RetryButton</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="695304197965900">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="327569161738305" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="372561461532168" type="System">
+                    <param id="0" name="Variable">Pausa</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="418453817291614" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="209647420097711" type="Golondrina">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="147861873006347" type="Golondrina">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action behavior="Platform" id="11" name="Set enabled" sid="880311112687819" type="Mensaje">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="342846908388118" type="System">
+                    <param id="0" name="Variable">Mensaje</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Play" sid="903866712682678" type="Audio">
+                    <param id="0" name="Audio file">Xilofone</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Xilo&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="555229951796137">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="252544077199062" type="Golondrina">
+                    <param id="0" name="Object">StopScroll</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="ScrollTo" id="1" name="Set enabled" sid="122503871581552" type="Golondrina">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="932566440841796">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="679465879249922" type="System">
+                    <param id="0" name="Variable">Vidas_mensajes</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="627490282379867" type="System">
+                    <param id="0" name="Variable">Pausa</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="743305645434516" type="Oops">
                     <param id="0" name="Visibility">0</param>
                 </action>
-                <action id="2" name="Set muted" sid="681672230647661" type="Audio">
+                <action id="-15" name="Set visible" sid="600346439947284" type="BuenaSuerte">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="517416439501051" type="BuenaSuerte">
+                    <param id="0" name="X">scrollx</param>
+                    <param id="1" name="Y">190</param>
+                </action>
+                <action id="-15" name="Set visible" sid="313800031299161" type="RetryButton">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="673462908283973" type="Retry">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-3" name="Set position" sid="556120447877526" type="TryAgainButton">
+                    <param id="0" name="X">scrollx</param>
+                    <param id="1" name="Y">303</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="940784212016082" type="TryAgain">
+                    <param id="0" name="Object">TryAgainButton</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="118832773993670" type="BackMenuButton">
+                    <param id="0" name="X">scrollx</param>
+                    <param id="1" name="Y">363</param>
+                </action>
+                <action id="-4" name="Set position to another object" sid="126955687322048" type="Volver">
+                    <param id="0" name="Object">BackMenuButton</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+                <action id="6" name="Stop" sid="261799618667063" type="Audio">
                     <param id="0" name="Tag">&quot;&quot;</param>
-                    <param id="1" name="State">1</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="206758124488701">
+        <event-block sid="594615984103930">
             <conditions>
-                <condition id="-1" name="Every tick" sid="256218062484958" type="System" />
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" sid="372568948763343" type="ConteoMsjs">
-                    <param id="0" name="Text">&quot;Messages:&quot;&amp;Vidas_mensajes</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="435151650495214">
-            <conditions>
-                <condition id="0" name="On clicked" sid="869092926007527" type="ButtonvOLVER" />
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="826354553075784" type="System">
-                    <param id="0" name="Layout">Menu</param>
-                </action>
-                <action id="6" name="Stop" sid="556272476438710" type="Audio">
-                    <param id="0" name="Tag">&quot;&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="773731495768846">
-            <conditions>
-                <condition id="6" name="On object clicked" sid="413020844605424" type="Mouse">
+                <condition id="6" name="On object clicked" sid="694966129947408" type="Mouse">
                     <param id="0" name="Mouse button">0</param>
                     <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">BackMenu</param>
+                    <param id="2" name="Object clicked">RetryButton</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="219091681915541" type="System">
-                    <param id="0" name="Layout">Menu</param>
+                <action id="-26" name="Restart layout" sid="770469586150458" type="System" />
+                <action id="-9" name="Set value" sid="323664088260323" type="System">
+                    <param id="0" name="Variable">Pausa</param>
+                    <param id="1" name="Value">0</param>
                 </action>
-                <action id="6" name="Stop" sid="467078865313274" type="Audio">
-                    <param id="0" name="Tag">&quot;&quot;</param>
+                <action id="6" name="Stop" sid="105886041441767" type="Audio">
+                    <param id="0" name="Tag">&quot;Xilo&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="518785177658252" type="Audio">
+                    <param id="0" name="Tag">&quot;Acid&quot;</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="789850442875768">
+        <event-block sid="922582548337909">
             <conditions>
-                <condition id="0" name="On key pressed" sid="264490390328257" type="Keyboard">
-                    <param id="0" name="Key">77</param>
+                <condition id="6" name="On object clicked" sid="988397027866568" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">BackMenuButton</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="758342288791537" type="System">
+                <action id="-2" name="Go to layout" sid="768388897577118" type="System">
                     <param id="0" name="Layout">Menu</param>
                 </action>
-                <action id="6" name="Stop" sid="852334073474456" type="Audio">
-                    <param id="0" name="Tag">&quot;&quot;</param>
+                <action id="-9" name="Set value" sid="713801316155262" type="System">
+                    <param id="0" name="Variable">JuegoComenzado</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="6" name="Stop" sid="541956181867105" type="Audio">
+                    <param id="0" name="Tag">&quot;Xilo&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="839913939991442" type="Audio">
+                    <param id="0" name="Tag">&quot;Acid&quot;</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="356813006400596">
+        <event-block sid="390783823469074">
             <conditions>
-                <condition id="0" name="On key pressed" sid="743231244289405" type="Keyboard">
-                    <param id="0" name="Key">82</param>
+                <condition id="6" name="On object clicked" sid="900967875274410" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">TryAgainButton</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="976420259233833" type="System">
+                    <param id="0" name="Variable">Vidas_mensajes</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-26" name="Restart layout" sid="630752134766995" type="System" />
-                <action id="6" name="Stop" sid="108604858629326" type="Audio">
-                    <param id="0" name="Tag">&quot;&quot;</param>
+                <action id="-26" name="Restart layout" sid="123212853094080" type="System" />
+                <action id="-21" name="Reset global variables" sid="695766516766043" type="System" />
+                <action id="6" name="Stop" sid="203048687231841" type="Audio">
+                    <param id="0" name="Tag">&quot;Xilo&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="479721010858317" type="Audio">
+                    <param id="0" name="Tag">&quot;Acid&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="273739618254429">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="769606321827718" type="Golondrina">
+                    <param id="0" name="Object">Sprite3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Set volume" sid="978112022868413" type="Audio">
+                    <param id="0" name="Tag">&quot;Xilo&quot;</param>
+                    <param id="1" name="dB">-100</param>
+                </action>
+                <action id="0" name="Play" sid="566573914842431" type="Audio">
+                    <param id="0" name="Audio file">Acido</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;Acid&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="177129073244282">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="330216677234620" type="System">
+                    <param id="0" name="Variable">configSonido</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="600328678244178" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="624844736666059">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="927014885051575" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">LetsPlay</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="146430301417637" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="594267180104992" type="System">
+                    <param id="0" name="Variable">Pausa</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="431155443914458">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="170455782193227" type="System">
+                    <param id="0" name="Variable">Pausa</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="968317884946571" type="System">
+                    <param id="0" name="Time scale">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="439167708393072">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="478092036749430" type="System">
+                    <param id="0" name="Variable">Pausa</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-13" name="Set time scale" sid="988788670661327" type="System">
+                    <param id="0" name="Time scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="792078790854390">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="292285989670384" type="System" />
+                <condition id="-14" name="Compare variable" sid="768907719227459" type="System">
+                    <param id="0" name="Variable">JuegoComenzado</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="622743320434821" type="System">
+                    <param id="0" name="Variable">Pausa</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="658629862141527" type="System">
+                    <param id="0" name="Variable">JuegoComenzado</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="640341876395967">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="665542992655883" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">BackMenuButton2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="391799686543183" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+                <action id="-9" name="Set value" sid="625540331722728" type="System">
+                    <param id="0" name="Variable">JuegoComenzado</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="6" name="Stop" sid="117290202435452" type="Audio">
+                    <param id="0" name="Tag">&quot;Xilo&quot;</param>
+                </action>
+                <action id="6" name="Stop" sid="567238858870524" type="Audio">
+                    <param id="0" name="Tag">&quot;Acid&quot;</param>
                 </action>
             </actions>
         </event-block>

@@ -16,7 +16,6 @@
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
-        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="gamepad" version="1">Gamepad</plugin>
         <plugin author="Scirra" id="sliderbar" version="1">Slider bar</plugin>
     </used-plugins>
@@ -192,29 +191,14 @@
         <object-type name="Mouse" sid="633603007188004">
             <plugin id="Mouse" />
         </object-type>
-        <object-type name="comenzar" sid="668630046609044">
-            <plugin id="Button" />
-        </object-type>
-        <object-type name="Config" sid="327538283489835">
-            <plugin id="Button" />
-        </object-type>
         <object-type name="creditos" sid="662830857294501">
             <plugin id="Button" />
         </object-type>
         <object-type name="SliderBar" sid="917877020779201">
             <plugin id="sliderbar" />
         </object-type>
-        <object-type name="TextBox" sid="971915965044708">
-            <plugin id="TextBox" />
-        </object-type>
-        <object-type name="Text" sid="140157195159753">
-            <plugin id="Text" />
-        </object-type>
         <object-type name="Text2" sid="111659344297133">
             <plugin id="Text" />
-        </object-type>
-        <object-type name="ButtonvOLVER" sid="665430552628237">
-            <plugin id="Button" />
         </object-type>
         <object-type name="torreta" sid="857147243206949">
             <plugin id="Sprite" />
@@ -292,7 +276,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Ganaste" sid="767044208038067">
+        <object-type name="Great" sid="767044208038067">
             <plugin id="Text" />
         </object-type>
         <object-type name="Suelo" sid="570764129381946">
@@ -306,7 +290,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Perdiste" sid="198313371868014">
+        <object-type name="Oops" sid="198313371868014">
             <plugin id="Text" />
         </object-type>
         <object-type name="Suelo2" sid="355399143853871">
@@ -342,7 +326,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="739443562809537">
+        <object-type name="MenuBackg" sid="739443562809537">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="721252634724210" speed="5">
@@ -366,7 +350,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite4" sid="797457323947863">
+        <object-type name="GameplayBackground" sid="797457323947863">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="767885617339567" speed="5">
@@ -380,41 +364,6 @@
                             <point x="0.558813" y="0.980354" />
                             <point x="0.0866811" y="0.960707" />
                             <point x="0.000723851" y="0.726916" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="TextBox2" sid="319820879624582">
-            <plugin id="TextBox" />
-        </object-type>
-        <object-type name="Text3" sid="387492655747034">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="comienzo1" sid="609816704502519">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="406880263386097" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\usuarios\alumno\Escritorio\Nueva carpeta (2)\boton 1 normal.png">
-                        <collision-poly>
-                            <point x="0.0594059" y="0.181818" />
-                            <point x="0.940594" y="0.181818" />
-                            <point x="0.970297" y="0.5" />
-                            <point x="0.965347" y="0.893939" />
-                            <point x="0.5" y="0.924242" />
-                            <point x="0.0346535" y="0.893939" />
-                            <point x="0.029703" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.506849" original-source="E:\usuarios\alumno\Escritorio\Nueva carpeta (2)\boton 1 presed.png">
-                        <collision-poly>
-                            <point x="0.0973451" y="0.30137" />
-                            <point x="0.5" y="0.260274" />
-                            <point x="0.915929" y="0.260274" />
-                            <point x="0.938053" y="0.493151" />
-                            <point x="0.938053" y="0.808219" />
-                            <point x="0.5" y="0.876712" />
-                            <point x="0.0973451" y="0.69863" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -447,7 +396,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="config1" sid="123501350735067">
+        <object-type name="Settings" sid="123501350735067">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="697210493221627" speed="5">
@@ -474,40 +423,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Credito1" sid="120155062511215">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="143040114904537" speed="5">
-                    <frame duration="1" hotspotX="0.502538" hotspotY="0.507937" original-source="E:\usuarios\alumno\Escritorio\Nueva carpeta (2)\boton 3 normal.png">
-                        <collision-poly>
-                            <point x="0.0203046" y="0.0634921" />
-                            <point x="0.497462" y="0.0634921" />
-                            <point x="0.969543" y="0.0952381" />
-                            <point x="0.969543" y="0.492063" />
-                            <point x="0.949239" y="0.84127" />
-                            <point x="0.0507614" y="0.84127" />
-                            <point x="0.00507614" y="0.492063" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.502463" hotspotY="0.5" original-source="E:\usuarios\alumno\Escritorio\Nueva carpeta (2)\boton 3 pressed.png">
-                        <collision-poly>
-                            <point x="0.0295567" y="0.107143" />
-                            <point x="0.497537" y="0.0357143" />
-                            <point x="0.965517" y="0.125" />
-                            <point x="0.955665" y="0.839286" />
-                            <point x="0.044335" y="0.839286" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Text4" sid="677608896015875">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="Text5" sid="370723913523699">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="Text6" sid="519455355777236">
+        <object-type name="TakeFlight" sid="677608896015875">
             <plugin id="Text" />
         </object-type>
         <object-type name="GeneradorNube" sid="916301312667954">
@@ -522,7 +438,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite5" sid="789913891431845">
+        <object-type name="TryAgainButton" sid="789913891431845">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="330006009129627" speed="5">
@@ -561,48 +477,21 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Credito2" sid="680306794545920">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="309504782709620" speed="5">
-                    <frame duration="1" hotspotX="0.502538" hotspotY="0.507937" original-source="E:\usuarios\alumno\Escritorio\Nueva carpeta (2)\boton 3 normal.png">
-                        <collision-poly>
-                            <point x="0.0203046" y="0.0634921" />
-                            <point x="0.497462" y="0.0634921" />
-                            <point x="0.969543" y="0.0952381" />
-                            <point x="0.969543" y="0.492063" />
-                            <point x="0.949239" y="0.84127" />
-                            <point x="0.0507614" y="0.84127" />
-                            <point x="0.00507614" y="0.492063" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.502463" hotspotY="0.5" original-source="E:\usuarios\alumno\Escritorio\Nueva carpeta (2)\boton 3 pressed.png">
-                        <collision-poly>
-                            <point x="0.0295567" y="0.107143" />
-                            <point x="0.497537" y="0.0357143" />
-                            <point x="0.965517" y="0.125" />
-                            <point x="0.955665" y="0.839286" />
-                            <point x="0.044335" y="0.839286" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="credito" sid="385732002964570">
+        <object-type name="Credits" sid="385732002964570">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="421463942031190" speed="5">
                     <frame duration="1" hotspotX="0.502415" hotspotY="0.5" original-source="E:\usuarios\alumno\Escritorio\Nueva carpeta (2)\boton 2 normal.png" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" />
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Retry_1" sid="248170931421315">
+        <object-type name="RetryButton" sid="248170931421315">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="205472775717490" speed="5">
                     <frame duration="1" hotspotX="0.497585" hotspotY="0.466667" original-source="C:\Users\Nicole\Desktop\Nicky Brave\GGJ-2018-Nicky-Break\Animations\config1\Default\000.png">
-                        <image-point name="Imagepoint 1" x="0.15942" y="0.383333" />
+                        <image-point name="Imagepoint 1" x="0.15942" y="0.216667" />
                         <collision-poly>
                             <point x="0.0151515" y="0.0526316" />
                             <point x="0.5" y="0.0526316" />
@@ -615,7 +504,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite6" sid="827264059471296">
+        <object-type name="CreditosBackg" sid="827264059471296">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="518597906105028" speed="5">
@@ -647,7 +536,7 @@
                             <point x="0.0338164" y="0.883333" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -657,36 +546,24 @@
         <object-type name="TryAgain" sid="178069033748493">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Button2" sid="548797089658954">
-            <plugin id="Button" />
-        </object-type>
-        <object-type name="Pause" sid="799263937988976">
-            <plugin id="Button" />
-        </object-type>
         <object-type name="Text7" sid="425187757501118">
             <plugin id="Text" />
         </object-type>
         <object-type name="Text8" sid="304524850235914">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Button3" sid="671884096581568">
-            <plugin id="Button" />
-        </object-type>
-        <object-type name="TextBox3" sid="378859329858701">
-            <plugin id="TextBox" />
-        </object-type>
-        <object-type name="ConteoMsjs" sid="973506923583040">
+        <object-type global="1" name="ConteoMsjs" sid="973506923583040">
             <plugin id="Text" />
         </object-type>
         <object-type name="BuenaSuerte" sid="785531881254306">
             <plugin id="Text" />
         </object-type>
-        <object-type name="BackMenu" sid="335905085491298">
+        <object-type name="BackMenuButton" sid="335905085491298">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="353027040844333" speed="5">
-                    <frame duration="1" hotspotX="0.512077" hotspotY="0.45" original-source="C:\Users\Nicole\Desktop\Nicky Brave\GGJ-2018-Nicky-Break\Animations\config1\Default\000.png">
-                        <image-point name="Imagepoint 1" x="0.202899" y="0.35" />
+                    <frame duration="1" hotspotX="0.492754" hotspotY="0.433333" original-source="C:\Users\Nicole\Desktop\Nicky Brave\GGJ-2018-Nicky-Break\Animations\config1\Default\000.png">
+                        <image-point name="Imagepoint 1" x="0.188406" y="0.266667" />
                         <collision-poly>
                             <point x="0.0386473" y="0.133333" />
                             <point x="0.497585" y="0.1" />
@@ -713,14 +590,14 @@
                             <point x="0.0338164" y="0.883333" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" />
                 </animation>
             </animation-folder>
         </object-type>
         <object-type name="Back" sid="509663982958025">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite7" sid="364404020119290">
+        <object-type name="GoloCredBackg" sid="364404020119290">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="638125229664921" speed="5">
@@ -736,7 +613,7 @@
         <object-type name="Text9" sid="419226498443426">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite8" sid="919286041142369">
+        <object-type name="GoloMenuBackg" sid="919286041142369">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="6" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="582930649967267" speed="5">
@@ -776,11 +653,12 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="comienzo" sid="505959494732337">
+        <object-type name="Start" sid="505959494732337">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="294525475922328" speed="5">
                     <frame duration="1" hotspotX="0.502415" hotspotY="0.5" original-source="E:\usuarios\alumno\Escritorio\Nueva carpeta (2)\boton 2 normal.png">
+                        <image-point name="Imagepoint 1" x="0.115942" y="0.283333" />
                         <collision-poly>
                             <point x="0.0386473" y="0.133333" />
                             <point x="0.497585" y="0.1" />
@@ -791,6 +669,7 @@
                         </collision-poly>
                     </frame>
                     <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="E:\usuarios\alumno\Escritorio\Nueva carpeta (2)\boton 2 pressed.png">
+                        <image-point name="Imagepoint 1" x="0.116162" y="0.280702" />
                         <collision-poly>
                             <point x="0.0151515" y="0.0526316" />
                             <point x="0.5" y="0.0526316" />
@@ -821,7 +700,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite9" sid="771393004206960">
+        <object-type name="MochilaBackg" sid="771393004206960">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="322796801325436" speed="5">
@@ -840,21 +719,63 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Tutorial" sid="856837069372485">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="457452401015756" speed="5">
+                    <frame duration="1" hotspotX="0.502041" hotspotY="0.5" original-source="C:\Users\Nicole\Desktop\Prot NickyBrave\Tutorial.png">
+                        <collision-poly>
+                            <point x="0.253061" y="0.264957" />
+                            <point x="0.755102" y="0.25641" />
+                            <point x="0.538776" y="0.5" />
+                            <point x="0.722449" y="0.709402" />
+                            <point x="0.497959" y="0.923077" />
+                            <point x="0.277551" y="0.709402" />
+                            <point x="0.481633" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LetsPlay" sid="678166020379960">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BackMenuButton2" sid="164291138628003">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="977646059519163" speed="5">
+                    <frame duration="1" hotspotX="0.492754" hotspotY="0.433333" original-source="C:\Users\Nicole\Desktop\Nicky Brave\GGJ-2018-Nicky-Break\Animations\config1\Default\000.png">
+                        <image-point name="Imagepoint 1" x="0.193237" y="0.333333" />
+                        <collision-poly>
+                            <point x="0.0386473" y="0.133333" />
+                            <point x="0.497585" y="0.1" />
+                            <point x="0.951691" y="0.166667" />
+                            <point x="0.951691" y="0.833333" />
+                            <point x="0.497585" y="0.916667" />
+                            <point x="0.0338164" y="0.883333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Menu.xml</layout>
-        <layout>config.xml</layout>
-        <layout>creditos.xml</layout>
+        <layout>Config.xml</layout>
+        <layout>Creditos.xml</layout>
         <layout>Nivel1.xml</layout>
+        <layout>UI.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>EVNivel1.xml</event-sheet>
-        <event-sheet>menu.xml</event-sheet>
-        <event-sheet>config.xml</event-sheet>
-        <event-sheet>creditos.xml</event-sheet>
+        <event-sheet>EvMenu.xml</event-sheet>
+        <event-sheet>EvConfig.xml</event-sheet>
+        <event-sheet>EvCreditos.xml</event-sheet>
         <event-sheet>EvPersonajes.xml</event-sheet>
-        <event-sheet>control setup.xml</event-sheet>
+        <event-sheet>EVJoystick1.xml</event-sheet>
+        <event-sheet>EvUI.xml</event-sheet>
+        <event-sheet>GlobalUI.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="56" />

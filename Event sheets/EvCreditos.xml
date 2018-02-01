@@ -1,12 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>creditos</name>
+    <name>EvCreditos</name>
     <events>
         <event-block sid="502043709297054">
-            <conditions>
-                <condition id="0" name="On clicked" sid="869272831007312" type="ButtonvOLVER" />
-            </conditions>
+            <conditions />
             <actions>
                 <action id="-2" name="Go to layout" sid="928986255081244" type="System">
                     <param id="0" name="Layout">Menu</param>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EvMenu</name>
+    <events>
+        <event-group description="" sid="695042679319904" title="Group3">
+            <sub-events>
+                <event-block sid="512600642063728">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="297236339608445" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Start</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="812853175866520" type="System">
+                            <param id="0" name="Variable">JuegoComenzado</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="491360823213780" type="System">
+                            <param id="0" name="Layout">UI</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="798722525540753" type="System">
+                            <param id="0" name="Variable">JuegoComenzado</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="553464945631846">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="193131144315563" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Settings</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="776814131906297" type="Settings">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="360033025119805" type="System">
+                            <param id="0" name="Layout">Config</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="195953833764535">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="159870018397838" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">Credits</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="831799605694619" type="System">
+                            <param id="0" name="Layout">Creditos</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="473458624464011">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="229030490923447" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Start</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="149033992638726" type="System">
+                    <param id="0" name="Variable">JuegoComenzado</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="369568663912634" type="System">
+                    <param id="0" name="Layout">UI</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="630048724039059" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="102219614358799">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="316707534473956" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="452693724373748" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="138010992906463">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="326616901635488" type="System" />
+            </conditions>
+            <actions>
+                <action id="-4" name="Set position to another object" sid="841627641724125" type="TakeFlight">
+                    <param id="0" name="Object">Start</param>
+                    <param id="1" name="Image point (optional)">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

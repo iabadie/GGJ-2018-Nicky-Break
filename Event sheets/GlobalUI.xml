@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GlobalUI</name>
+    <events>
+        <event-block sid="677699067542113">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="723684517361953" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="906479428105473" type="ConteoMsjs">
+                    <param id="0" name="Text">&quot;Messages:&quot;&amp;Vidas_mensajes</param>
+                </action>
+                <action id="-15" name="Set visible" sid="848027182735378" type="ConteoMsjs">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

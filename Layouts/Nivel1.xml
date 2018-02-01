@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite4" uid="3">
+                <instance type="GameplayBackground" uid="3">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -201,8 +201,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>5020</x>
-                        <y>460</y>
+                        <x>5039</x>
+                        <y>450</y>
                         <z>0</z>
                         <width>82</width>
                         <height>94</height>
@@ -264,28 +264,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Suelo2" uid="20">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>2503</x>
-                        <y>478</y>
-                        <z>0</z>
-                        <width>5008</width>
-                        <height>20</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Suelo" uid="2">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
@@ -297,7 +275,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>2503</x>
-                        <y>478</y>
+                        <y>521</y>
                         <z>0</z>
                         <width>5008</width>
                         <height>20</height>
@@ -310,7 +288,7 @@
                 </instance>
                 <instance type="Suelo2" uid="8">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
@@ -318,41 +296,14 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>5283</x>
-                        <y>480</y>
+                        <x>5286</x>
+                        <y>520</y>
                         <z>0</z>
                         <width>435</width>
                         <height>-24</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Ganaste" uid="21">
-                    <properties>
-                        <text>Ganaste</text>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <font>Arial,-64,700,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>4902</x>
-                        <y>209</y>
-                        <z>0</z>
-                        <width>398</width>
-                        <height>108</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -551,7 +502,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>5038</x>
-                        <y>235</y>
+                        <y>238</y>
                         <z>0</z>
                         <width>24</width>
                         <height>480</height>
@@ -625,33 +576,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Perdiste" uid="33">
-                    <properties>
-                        <text>OOPS...</text>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <font>Arial,-64,700,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>258.5</x>
-                        <y>189.5</y>
-                        <z>0</z>
-                        <width>337</width>
-                        <height>101</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Explosión" uid="34">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -674,7 +598,26 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite5" uid="26">
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Tuto" sid="749100743215178">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>0</x>
+                <y>0</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Tutorial" uid="6">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -684,25 +627,71 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-180</x>
-                        <y>633</y>
+                        <x>427.633392334</x>
+                        <y>240.000015259</y>
                         <z>0</z>
-                        <width>207</width>
-                        <height>60</height>
+                        <width>310.365722656</width>
+                        <height>296.430938721</height>
                         <depth>0</depth>
-                        <hotspotX>0.516908228</hotspotX>
-                        <hotspotY>0.433333337</hotspotY>
+                        <hotspotX>0.502040803</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Retry" uid="31">
+                <instance type="LetsPlay" uid="7">
                     <properties>
-                        <text>RETRY</text>
+                        <text>Let&apos;s play!</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-27,700,0</font>
-                        <color>0,0,0</color>
+                        <font>Arial,-32,400,0</font>
+                        <color>255,255,255</color>
                         <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>430</x>
+                        <y>430</y>
+                        <z>0</z>
+                        <width>158</width>
+                        <height>51</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Perder" sid="759284591652396">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="BuenaSuerte" uid="48">
+                    <properties>
+                        <text>GOOD LUCK NEXT TIME</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Arial,-64,700,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
@@ -711,11 +700,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-419</x>
-                        <y>494</y>
+                        <x>48</x>
+                        <y>191</y>
                         <z>0</z>
-                        <width>236</width>
-                        <height>50</height>
+                        <width>774</width>
+                        <height>101</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -723,35 +712,13 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Volver_menu" uid="32">
+                <instance type="Oops" uid="33">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>2612</x>
-                        <y>716</y>
-                        <z>0</z>
-                        <width>207</width>
-                        <height>60</height>
-                        <depth>0</depth>
-                        <hotspotX>0.512077272</hotspotX>
-                        <hotspotY>0.449999988</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Volver" uid="37">
-                    <properties>
-                        <text>BACK</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-27,700,0</font>
+                        <text>OOPS...</text>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <font>Arial,-64,700,0</font>
                         <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
+                        <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
@@ -760,11 +727,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>538</x>
-                        <y>663</y>
+                        <x>259</x>
+                        <y>190</y>
                         <z>0</z>
-                        <width>238</width>
-                        <height>50</height>
+                        <width>337</width>
+                        <height>101</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -772,7 +739,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Retry_1" uid="38">
+                <instance type="RetryButton" uid="38">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -782,14 +749,58 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>263</x>
-                        <y>-257</y>
+                        <x>3948</x>
+                        <y>-199</y>
                         <z>0</z>
                         <width>207</width>
                         <height>60</height>
                         <depth>0</depth>
                         <hotspotX>0.497584552</hotspotX>
                         <hotspotY>0.466666669</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BackMenuButton" uid="51">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>3939</x>
+                        <y>-109</y>
+                        <z>0</z>
+                        <width>207</width>
+                        <height>60</height>
+                        <depth>0</depth>
+                        <hotspotX>0.492753625</hotspotX>
+                        <hotspotY>0.433333337</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TryAgainButton" uid="26">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>2914</x>
+                        <y>-218</y>
+                        <z>0</z>
+                        <width>207</width>
+                        <height>60</height>
+                        <depth>0</depth>
+                        <hotspotX>0.516908228</hotspotX>
+                        <hotspotY>0.433333337</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -821,61 +832,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Pause" uid="39">
+                <instance type="Retry" uid="31">
                     <properties>
-                        <type>Button</type>
-                        <text>Pause</text>
-                        <tooltip></tooltip>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                        <checked>No</checked>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>330</x>
-                        <y>190</y>
-                        <z>0</z>
-                        <width>157</width>
-                        <height>37</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
-                <instance type="TextBox3" uid="40">
-                    <properties>
-                        <text>P: Pause   B: Back  M: Menu  R: Restart</text>
-                        <placeholder></placeholder>
-                        <tooltip></tooltip>
+                        <text>RETRY</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <read-only>No</read-only>
-                        <spell-check>No</spell-check>
-                        <type>Text</type>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>6</x>
-                        <y>6</y>
-                        <z>0</z>
-                        <width>264</width>
-                        <height>24</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
-                <instance type="ConteoMsjs" uid="47">
-                    <properties>
-                        <text>Massages:</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-21,700,0</font>
+                        <font>Arial,-27,700,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -886,11 +847,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>676</x>
-                        <y>5</y>
+                        <x>-419</x>
+                        <y>494</y>
                         <z>0</z>
-                        <width>340</width>
-                        <height>130</height>
+                        <width>236</width>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -898,13 +859,13 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BuenaSuerte" uid="48">
+                <instance type="Volver" uid="37">
                     <properties>
-                        <text>GOOD LUCK NEXT TIME</text>
+                        <text>BACK</text>
                         <initial-visibility>Invisible</initial-visibility>
-                        <font>Arial,-64,700,0</font>
+                        <font>Arial,-27,700,0</font>
                         <color>0,0,0</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
+                        <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Word</wrapping>
@@ -913,11 +874,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>45</x>
-                        <y>189</y>
+                        <x>538</x>
+                        <y>663</y>
                         <z>0</z>
-                        <width>774</width>
-                        <height>101</height>
+                        <width>106</width>
+                        <height>50</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -925,31 +886,26 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ButtonvOLVER" uid="49">
-                    <properties>
-                        <type>Button</type>
-                        <text>Volver</text>
-                        <tooltip></tooltip>
-                        <initial-visibility>Visible</initial-visibility>
-                        <enabled>Yes</enabled>
-                        <auto-font-size>Yes</auto-font-size>
-                        <id-optional></id-optional>
-                        <checked>No</checked>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>2815</x>
-                        <y>707</y>
-                        <z>0</z>
-                        <width>163</width>
-                        <height>82</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                    </world>
-                </instance>
-                <instance type="Ganaste" uid="50">
+            </instances>
+            <effects />
+        </layer>
+        <layer name="Ganar" sid="249068067934363">
+            <initially-visible>1</initially-visible>
+            <background-color>255,255,255</background-color>
+            <transparent>1</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>0</force-own-texture>
+            <global>0</global>
+            <use-render-cells>0</use-render-cells>
+            <blend-mode>0</blend-mode>
+            <effect-fallback>0</effect-fallback>
+            <instances>
+                <instance type="Great" uid="50">
                     <properties>
                         <text>GREAT!</text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -964,8 +920,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4894</x>
-                        <y>215</y>
+                        <x>4907</x>
+                        <y>186</y>
                         <z>0</z>
                         <width>398</width>
                         <height>108</height>
@@ -976,7 +932,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BackMenu" uid="51">
+                <instance type="Volver_menu" uid="32">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -986,8 +942,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3186</x>
-                        <y>-302</y>
+                        <x>1921</x>
+                        <y>-91</y>
                         <z>0</z>
                         <width>207</width>
                         <height>60</height>
@@ -995,6 +951,28 @@
                         <hotspotX>0.512077272</hotspotX>
                         <hotspotY>0.449999988</hotspotY>
                         <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="BackMenuButton2" uid="10">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4251</x>
+                        <y>-291</y>
+                        <z>0</z>
+                        <width>207</width>
+                        <height>60</height>
+                        <depth>0</depth>
+                        <hotspotX>0.492753625</hotspotX>
+                        <hotspotY>0.433333337</hotspotY>
+                        <angle>-0.000758526</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
@@ -1013,11 +991,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>953</x>
-                        <y>-376</y>
+                        <x>1191</x>
+                        <y>-145</y>
                         <z>0</z>
-                        <width>238</width>
-                        <height>50</height>
+                        <width>113</width>
+                        <height>53</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
